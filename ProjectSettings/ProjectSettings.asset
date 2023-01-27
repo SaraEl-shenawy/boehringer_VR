@@ -581,6 +581,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     1: CREST_OCEAN
+    7: CREST_OCEAN
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
