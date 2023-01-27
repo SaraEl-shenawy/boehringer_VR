@@ -16,8 +16,8 @@ public class Character : MonoBehaviour
     }
     IEnumerator TalkingAnimation(AnimationClip _animationClip, AudioClip _audioClip)
     {
-        AnimationClipSettings clipSettings = AnimationUtility.GetAnimationClipSettings(_animationClip);
-        clipSettings.loopTime = true;
+        //AnimationClipSettings clipSettings = AnimationUtility.GetAnimationClipSettings(_animationClip);
+        //clipSettings.loopTime = true;
         //_animationClip.wrapMode = WrapMode.Loop; 
         yield return new WaitForSeconds(_audioClip.length);
 
