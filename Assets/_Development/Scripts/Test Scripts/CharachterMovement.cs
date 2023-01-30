@@ -41,5 +41,21 @@ public class CharachterMovement : MonoBehaviour
         transform.Translate(_horizontalMove * SpeedFactor, 0, Input.GetAxisRaw("Vertical") * SpeedFactor);
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Fishing")
+        {
+            Debug.Log("Fish");
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                animator.SetFloat("Fishing", 0.5f);
+            }
+            if (Input.GetKeyUp(KeyCode.F))
+            {
+                animator.SetFloat("Fishing", 0f);
+            }
+        }
+    }
 }
 
