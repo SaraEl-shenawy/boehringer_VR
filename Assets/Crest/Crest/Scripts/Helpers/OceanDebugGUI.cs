@@ -154,88 +154,92 @@ namespace Crest
             }
         }
 
-        void OnGUI()
-        {
-            Color bkp = GUI.color;
+//        void OnGUI()
+//        {
+//            Color bkp = GUI.color;
 
-            if (_guiVisible)
-            {
-                GUI.skin.toggle.normal.textColor = Color.white;
-                GUI.skin.label.normal.textColor = Color.white;
+//            if (_guiVisible)
+//            {
+//                GUI.skin.toggle.normal.textColor = Color.white;
+//                GUI.skin.label.normal.textColor = Color.white;
 
-                float x = 5f, y = 0f;
-                float w = _leftPanelWidth - 2f * x, h = 25f;
+//                float x = 5f, y = 0f;
+//                float w = _leftPanelWidth - 2f * x, h = 25f;
 
-                GUI.color = _guiColor;
-                GUI.DrawTexture(new Rect(0, 0, w + 2f * x, Screen.height), Texture2D.whiteTexture);
-                GUI.color = Color.white;
+//                GUI.color = _guiColor;
+//                GUI.DrawTexture(new Rect(0, 0, w + 2f * x, Screen.height), Texture2D.whiteTexture);
+//                GUI.color = Color.white;
 
-                RenderWireFrame._wireFrame = GUI.Toggle(new Rect(x, y, w, h), RenderWireFrame._wireFrame, "Wireframe"); y += h;
+//                RenderWireFrame._wireFrame = GUI.Toggle(new Rect(x, y, w, h), RenderWireFrame._wireFrame, "Wireframe"); y += h;
 
-                GUI.changed = false;
-                bool freeze = GUI.Toggle(new Rect(x, y, w, h), Time.timeScale == 0f, "Freeze time (F)"); y += h;
-                if (GUI.changed)
-                {
-                    Time.timeScale = freeze ? 0f : 1f;
-                }
+//                GUI.changed = false;
+//                bool freeze = GUI.Toggle(new Rect(x, y, w, h), Time.timeScale == 0f, "Freeze time (F)"); y += h;
+//                if (GUI.changed)
+//                {
+//                    Time.timeScale = freeze ? 0f : 1f;
+//                }
 
-                // Global wind speed
-                if (OceanRenderer.Instance)
-                {
-                    GUI.Label(new Rect(x, y, w, h), "Global Wind Speed"); y += h;
-                    OceanRenderer.Instance._globalWindSpeed = GUI.HorizontalSlider(new Rect(x, y, w, h), OceanRenderer.Instance._globalWindSpeed, 0f, 150f); y += h;
-                }
+//                // Global wind speed
+//                if (OceanRenderer.Instance)
+//                {
+//                    GUI.Label(new Rect(x, y, w, h), "Global Wind Speed"); y += h;
+//                    OceanRenderer.Instance._globalWindSpeed = GUI.HorizontalSlider(new Rect(x, y, w, h), OceanRenderer.Instance._globalWindSpeed, 0f, 150f); y += h;
+//                }
 
-                OnGUIGerstnerSection(x, ref y, w, h);
+//                OnGUIGerstnerSection(x, ref y, w, h);
 
-                _showOceanData = GUI.Toggle(new Rect(x, y, w, h), _showOceanData, "Show sim data"); y += h;
+//                _showOceanData = GUI.Toggle(new Rect(x, y, w, h), _showOceanData, "Show sim data"); y += h;
 
-                LodDataMgrAnimWaves._shapeCombinePass = GUI.Toggle(new Rect(x, y, w, h), LodDataMgrAnimWaves._shapeCombinePass, "Shape combine pass"); y += h;
+//                LodDataMgrAnimWaves._shapeCombinePass = GUI.Toggle(new Rect(x, y, w, h), LodDataMgrAnimWaves._shapeCombinePass, "Shape combine pass"); y += h;
 
-                LodDataMgrShadow.s_processData = GUI.Toggle(new Rect(x, y, w, h), LodDataMgrShadow.s_processData, "Process Shadows"); y += h;
+//                LodDataMgrShadow.s_processData = GUI.Toggle(new Rect(x, y, w, h), LodDataMgrShadow.s_processData, "Process Shadows"); y += h;
 
-                if (OceanRenderer.Instance)
-                {
-                    if (OceanRenderer.Instance._lodDataDynWaves != null)
-                    {
-                        var dt = 1f / OceanRenderer.Instance._lodDataDynWaves.Settings._simulationFrequency;
-                        var steps = OceanRenderer.Instance._lodDataDynWaves.LastUpdateSubstepCount;
-                        GUI.Label(new Rect(x, y, w, h), string.Format("Sim steps: {0:0.00000} x {1}", dt, steps)); y += h;
-                    }
+//                if (OceanRenderer.Instance)
+//                {
+//                    if (OceanRenderer.Instance._lodDataDynWaves != null)
+//                    {
+//                        var dt = 1f / OceanRenderer.Instance._lodDataDynWaves.Settings._simulationFrequency;
+//                        var steps = OceanRenderer.Instance._lodDataDynWaves.LastUpdateSubstepCount;
+//                        GUI.Label(new Rect(x, y, w, h), string.Format("Sim steps: {0:0.00000} x {1}", dt, steps)); y += h;
+//                    }
 
-                    var querySystem = OceanRenderer.Instance.CollisionProvider as QueryBase;
-                    if (OceanRenderer.Instance.CollisionProvider != null && querySystem != null)
-                    {
-                        GUI.Label(new Rect(x, y, w, h), $"Query result GUIDs: {querySystem.ResultGuidCount}"); y += h;
-                        GUI.Label(new Rect(x, y, w, h), $"Queries in flight: {querySystem.RequestCount}"); y += h;
-                    }
+//                    var querySystem = OceanRenderer.Instance.CollisionProvider as QueryBase;
+//                    if (OceanRenderer.Instance.CollisionProvider != null && querySystem != null)
+//                    {
+//                        GUI.Label(new Rect(x, y, w, h), $"Query result GUIDs: {querySystem.ResultGuidCount}"); y += h;
+                        
 
-#if UNITY_EDITOR
-                    if (GUI.Button(new Rect(x, y, w, h), "Select Ocean Mat"))
-                    {
-                        var path = UnityEditor.AssetDatabase.GetAssetPath(OceanRenderer.Instance.OceanMaterial);
-                        var asset = UnityEditor.AssetDatabase.LoadMainAssetAtPath(path);
-                        UnityEditor.Selection.activeObject = asset;
-                    }
-                    y += h;
-#endif
-                }
+//                        GUI.Label(new Rect(x, y, w, h), $"Queries in flight: {querySystem.RequestCount}"); y += h;
 
-                if (GUI.Button(new Rect(x, y, w, h), "Hide GUI (G)"))
-                {
-                    ToggleGUI();
-                }
-                y += h;
-            }
+//                    }
 
-            // draw source textures to screen
-            if (_showOceanData)
-            {
-                DrawShapeTargets();
-            }
+//#if UNITY_EDITOR
+//                    if (GUI.Button(new Rect(x, y, w, h), "Select Ocean Mat"))
+//                    {
+//                        var path = UnityEditor.AssetDatabase.GetAssetPath(OceanRenderer.Instance.OceanMaterial);
+//                        var asset = UnityEditor.AssetDatabase.LoadMainAssetAtPath(path);
+//                        UnityEditor.Selection.activeObject = asset;
+//                    }
+//                    y += h;
+                    
+//#endif
+//                }
 
-            GUI.color = bkp;
-        }
+//                if (GUI.Button(new Rect(x, y, w, h), "Hide GUI (G)"))
+//                {
+//                    ToggleGUI();
+//                }
+//                y += h;
+//            }
+
+//            // draw source textures to screen
+//            if (_showOceanData)
+//            {
+//                DrawShapeTargets();
+//            }
+
+//            GUI.color = bkp;
+//        }
 
         void OnGUIGerstnerSection(float x, ref float y, float w, float h)
         {
