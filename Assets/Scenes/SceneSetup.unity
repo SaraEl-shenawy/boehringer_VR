@@ -9773,6 +9773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ram_Trial_Waterfall_Top2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5429695884030570674, guid: 1c13960074973ea459ec75bd05ef05f4, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5430853014604530778, guid: 1c13960074973ea459ec75bd05ef05f4, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 1.4
@@ -11663,7 +11667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1948557165
 Transform:
   m_ObjectHideFlags: 0
