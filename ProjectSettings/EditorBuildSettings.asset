@@ -15,8 +15,11 @@ EditorBuildSettings:
     path: Assets/HapticsScene.unity
     guid: fd5a860a6835d754caa75b78c9ec3ffc
   - enabled: 1
-    path: Assets/Scenes/DemoScene.unity
-    guid: 00d0015ba54f7c04abd97fddfb67cc5d
+    path: Assets/Scenes/Start.unity
+    guid: 4786175596a6c62458a0ad6a41fb7542
+  - enabled: 1
+    path: Assets/Scenes/Demo Scene.unity
+    guid: d686a7d055535104ebbd0a222639028c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: efdd0c2a4cf1f2343ac0b3c7d690b4c8, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2e7939c635e8e3c46b89447ffc95788a, type: 2}
