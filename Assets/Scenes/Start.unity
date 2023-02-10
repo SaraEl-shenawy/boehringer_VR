@@ -12225,6 +12225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden Bridge
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2aa0f922a145c8640a085b50672150ee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2aa0f922a145c8640a085b50672150ee, type: 3}
 --- !u!4 &928593942 stripped
@@ -19581,7 +19585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28944da4335bdc34e8558ecef509e3dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -109.270546
+      value: -112.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28944da4335bdc34e8558ecef509e3dd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19589,7 +19593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28944da4335bdc34e8558ecef509e3dd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.399147
+      value: 6.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28944da4335bdc34e8558ecef509e3dd, type: 3}
       propertyPath: m_LocalRotation.w
