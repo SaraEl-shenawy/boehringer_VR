@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - FishingItems
+  - BowlingPins
+  - WifeArea
   layers:
   - Default
   - TransparentFX

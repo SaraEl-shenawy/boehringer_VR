@@ -22,4 +22,12 @@ public class Character : MonoBehaviour
         yield return new WaitForSeconds(_audioClip.length);
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "WifeArea")
+        {
+            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(DialoguePlayer.instance.dockDialogue, null));
+        }
+    }
 }

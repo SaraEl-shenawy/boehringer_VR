@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialoguePlayer : MonoBehaviour
 {
@@ -8,11 +9,28 @@ public class DialoguePlayer : MonoBehaviour
     public Sound[] outdoorHouseDialogue;
     public AudioSource dialogueSource;
 
+    public GameObject backPack;
+    public static DialoguePlayer instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     private void Start()
     {
-        StartCoroutine(PlayDialogueAudios(dockDialogue));
+        StartCoroutine(PlayDialogueAudios(dockDialogue, OnDockDialogueEnded));
     }
-    IEnumerator PlayDialogueAudios(Sound[] _currentDialogue)
+    public IEnumerator PlayDialogueAudios(Sound[] _currentDialogue, UnityAction OnDockDialogueEnd)
     {
         yield return null;
 
@@ -26,6 +44,16 @@ public class DialoguePlayer : MonoBehaviour
                 yield return null;
             }
         }
+        if (OnDockDialogueEnd != null)
+        {
+            OnDockDialogueEnd();
+            OnDockDialogueEnd = null;
+        }
+    }
+    public void OnDockDialogueEnded()
+    {
+        // pickup action
+        backPack.SetActive(true);
     }
 }
 
