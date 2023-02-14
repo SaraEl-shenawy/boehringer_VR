@@ -19,8 +19,8 @@ public class DemoManager : MonoBehaviour
 
     IEnumerator StopVideo()
     {
-        yield return new WaitForSeconds(6f);
-        VideoManager.instance.PauseVideo();
+        yield return new WaitForSeconds(10f);
+        VideoManager.instance.ChangeVideoVoice();
         AudioManager.instance.Play("MaleBreathing");
 
         for (int i = 0; i < AudioManager.instance.sounds.Length; i++)
@@ -35,7 +35,7 @@ public class DemoManager : MonoBehaviour
     IEnumerator OnAudioDone(float _audioTime)
     {
         yield return new WaitForSeconds(_audioTime + 1f);
-        VideoManager.instance.PlayVideo(oldManClip);
+        VideoManager.instance.ChangeVideoVoice();
         canvasRestart.SetActive(true);
     }
 }

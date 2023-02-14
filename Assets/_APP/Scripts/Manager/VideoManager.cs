@@ -8,7 +8,7 @@ public class VideoManager : MonoBehaviour
 {
     [SerializeField]
     private VideoPlayer videoPlayer;
-    
+
     public static VideoManager instance;
     private void Awake()
     {
@@ -37,6 +37,18 @@ public class VideoManager : MonoBehaviour
     public void PauseVideo()
     {
         videoPlayer.Pause();
+    }
+    public void ChangeVideoVoice()
+    {
+        if (videoPlayer.gameObject.GetComponent<AudioSource>().volume >= 0.1f)
+        {
+            videoPlayer.gameObject.GetComponent<AudioSource>().volume = 0.05f;
+            return;
+        }
+        if (videoPlayer.gameObject.GetComponent<AudioSource>().volume < 0.1f)
+        {
+            videoPlayer.gameObject.GetComponent<AudioSource>().volume = 1f;
+        }
     }
 
 }
