@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameSequence : MonoBehaviour
 {
-    public List<GameObject> panels;
-    public void ActivateNextPanel(int _index = 0)
+    private void Start()
     {
-        for (int i = 0; i < panels.Count; i++)
+        if (SceneManager.GetActiveScene().name == "Chapter 2")
         {
-            panels[i].SetActive(false);
+            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(DialoguePlayer.instance.dockDialogue, DialoguePlayer.instance.OnDockDialogueEnded));
+            return;
         }
-        panels[_index].SetActive(true);
-        _index++;
+        if (SceneManager.GetActiveScene().name == "Chapter 3")
+        {
+            AudioManager.instance.Play("Im So Tired");
+            //user start moving to kitchen
+            return;
+        }
     }
 }

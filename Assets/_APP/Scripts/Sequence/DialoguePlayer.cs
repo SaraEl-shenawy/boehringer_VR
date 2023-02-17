@@ -28,7 +28,6 @@ public class DialoguePlayer : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(PlayDialogueAudios(dockDialogue, OnDockDialogueEnded));
     }
     public IEnumerator PlayDialogueAudios(Sound[] _currentDialogue, UnityAction OnDockDialogueEnd)
     {
