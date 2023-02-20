@@ -31,7 +31,7 @@ public class DialoguePlayer : MonoBehaviour
     }
     public IEnumerator PlayDialogueAudios(Sound[] _currentDialogue, UnityAction OnDockDialogueEnd)
     {
-        yield return null;
+        yield return new WaitForSeconds(1f);
 
         for (int i = 0; i < _currentDialogue.Length; i++)
         {
