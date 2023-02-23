@@ -14,6 +14,9 @@ public class Sound
     public float pitch;
 
     public bool loop;
+    public bool isMale;
+    public string animationClipName;
+    public GameObject soundSource;
 
     [HideInInspector]
     public AudioSource source;

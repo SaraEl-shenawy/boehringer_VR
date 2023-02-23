@@ -27,7 +27,13 @@ public class Character : MonoBehaviour
     {
         if (other.gameObject.tag == "WifeArea")
         {
-            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(DialoguePlayer.instance.dockDialogue, null));
+            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.outdoorHouseDialogue, null));
+            other.gameObject.SetActive(false);
+        }
+        if (other.gameObject.tag == "House")
+        {
+            this.gameObject.GetComponentInChildren<Animator>().enabled = true;
+            // switch scene to interior 
         }
     }
 }

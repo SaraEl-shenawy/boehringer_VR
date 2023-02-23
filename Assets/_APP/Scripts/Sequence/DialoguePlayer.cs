@@ -5,11 +5,12 @@ using UnityEngine.Events;
 
 public class DialoguePlayer : MonoBehaviour
 {
-    public Sound[] dockDialogue;
-    public Sound[] outdoorHouseDialogue;
     public AudioSource dialogueSource;
 
     public GameObject backPack;
+    public GameObject userObject;
+    public GameObject femaleCharacter;
+    //public GameObject maleCharacter;
     public static DialoguePlayer instance;
 
     private void Awake()
@@ -35,10 +36,17 @@ public class DialoguePlayer : MonoBehaviour
 
         for (int i = 0; i < _currentDialogue.Length; i++)
         {
-            dialogueSource.clip = _currentDialogue[i].clip;
+            if (!_currentDialogue[i].isMale)
+            {
+                femaleCharacter.GetComponent<Animator>().Play(_currentDialogue[i].animationClipName);
+            }
+            //else
+            //{
+            //    maleCharacter.GetComponent<Animator>().StartPlayback();
+            //}
 
-            dialogueSource.Play();
-            while (dialogueSource.isPlaying)
+            AudioManager.instance.Play(_currentDialogue[i].name);
+            while (_currentDialogue[i].soundSource.GetComponent<AudioSource>().isPlaying)
             {
                 yield return null;
             }
@@ -53,6 +61,10 @@ public class DialoguePlayer : MonoBehaviour
     {
         // pickup action
         backPack.SetActive(true);
+        userObject.AddComponent<Rigidbody>();
+        userObject.GetComponent<Collider>().enabled = true;
+        userObject.GetComponent<Rigidbody>().useGravity = true;
+
     }
 }
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class PickingEquipments : MonoBehaviour
 {
@@ -22,5 +23,7 @@ public class PickingEquipments : MonoBehaviour
     public void OnStartDockDialogue()
     {
         AudioManager.instance.Play("TimeToGo");
+        DialoguePlayer.instance.userObject.GetComponent<ContinuousMoveProviderBase>().enabled = true;
+        DialoguePlayer.instance.backPack.SetActive(false);
     }
 }

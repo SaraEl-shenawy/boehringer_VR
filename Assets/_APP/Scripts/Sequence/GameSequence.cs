@@ -9,7 +9,8 @@ public class GameSequence : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Chapter 2")
         {
-            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(DialoguePlayer.instance.dockDialogue, DialoguePlayer.instance.OnDockDialogueEnded));
+            AudioManager.instance.Play("Water");
+            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.dockDialogue, DialoguePlayer.instance.OnDockDialogueEnded));
             return;
         }
         if (SceneManager.GetActiveScene().name == "Chapter 3")

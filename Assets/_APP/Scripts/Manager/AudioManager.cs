@@ -6,6 +6,8 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
+    public Sound[] dockDialogue;
+    public Sound[] outdoorHouseDialogue;
     public static AudioManager instance;
     private void Awake()
     {
@@ -22,12 +24,42 @@ public class AudioManager : MonoBehaviour
 
         foreach (Sound s in sounds)
         {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
+            if (s.soundSource.GetComponent<AudioSource>() == null)
+            {
+                s.source = s.soundSource.AddComponent<AudioSource>();
+                s.source.spatialBlend = 1f;
+                s.source.clip = s.clip;
 
-            s.source.volume = s.volume;
-            s.source.pitch = s.pitch;
-            s.source.loop = s.loop;
+                s.source.volume = s.volume;
+                s.source.pitch = s.pitch;
+                s.source.loop = s.loop;
+            }
+        }
+        foreach (Sound s in dockDialogue)
+        {
+            if (s.soundSource.GetComponent<AudioSource>() == null)
+            {
+                s.source = s.soundSource.AddComponent<AudioSource>();
+                s.source.spatialBlend = 1f;
+                s.source.clip = s.clip;
+
+                s.source.volume = s.volume;
+                s.source.pitch = s.pitch;
+                s.source.loop = s.loop;
+            }
+        }
+        foreach (Sound s in outdoorHouseDialogue)
+        {
+            if (s.soundSource.GetComponent<AudioSource>() == null)
+            {
+                s.source = s.soundSource.AddComponent<AudioSource>();
+                s.source.spatialBlend = 1f;
+                s.source.clip = s.clip;
+
+                s.source.volume = s.volume;
+                s.source.pitch = s.pitch;
+                s.source.loop = s.loop;
+            }
         }
     }
     public void Play(string _targetName)
@@ -36,7 +68,24 @@ public class AudioManager : MonoBehaviour
         {
             if (item.name == _targetName)
             {
-                item.source.Play();
+                item.soundSource.GetComponent<AudioSource>().clip = item.clip;
+                item.soundSource.GetComponent<AudioSource>().Play();
+            }
+        }
+        foreach (var item in dockDialogue)
+        {
+            if (item.name == _targetName)
+            {
+                item.soundSource.GetComponent<AudioSource>().clip = item.clip;
+                item.soundSource.GetComponent<AudioSource>().Play();
+            }
+        }
+        foreach (var item in outdoorHouseDialogue)
+        {
+            if (item.name == _targetName)
+            {
+                item.soundSource.GetComponent<AudioSource>().clip = item.clip;
+                item.soundSource.GetComponent<AudioSource>().Play();
             }
         }
     }

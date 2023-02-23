@@ -21,7 +21,7 @@ public class DemoManager : MonoBehaviour
     {
         yield return new WaitForSeconds(10f);
         VideoManager.instance.ChangeVideoVoice();
-        AudioManager.instance.Play("MaleBreathing");
+        AudioManager.instance.Play("MaleBreathing") ;
 
         for (int i = 0; i < AudioManager.instance.sounds.Length; i++)
         {
