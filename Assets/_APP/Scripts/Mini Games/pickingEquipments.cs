@@ -19,6 +19,14 @@ public class PickingEquipments : MonoBehaviour
                 OnStartDockDialogue();
             }
         }
+        if (other.gameObject.tag == "Fruits")
+        {
+            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
+            AudioManager.instance.Play("My Fingers");
+            // vest vibrate off
+
+        }
     }
     public void OnStartDockDialogue()
     {
