@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: 668aecf91371c8b4997e42c0c7b19527, type: 3}
   m_ShaderKeywords: _CAUSTICS_ON _CLIPSURFACE_ON _COMPILESHADERWITHDEBUGINFO_ON _COMPUTEDIRECTIONALLIGHT_ON
     _DEBUGMULTIPLYBYLIGHT0COLOR_ON _FLOW_ON _FOAM3DLIGHTING_ON _FOAM_ON _OVERRIDEREFLECTIONCUBEMAP_ON
-    _SHADOWS_ON _SUBSURFACEHEIGHTLERP_ON _TRANSPARENCY_ON
+    _PLANARREFLECTIONS_ON _PROCEDURALSKY_ON _SHADOWS_ON _SUBSURFACEHEIGHTLERP_ON
+    _TRANSPARENCY_ON
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -85,12 +86,12 @@ Material:
     - _Caustics: 1
     - _CausticsBase: 0.07
     - _CausticsBias: 0.7
-    - _CausticsDepthOfField: 0.33
-    - _CausticsDistortionScale: 10
+    - _CausticsDepthOfField: 1
+    - _CausticsDistortionScale: 16.1
     - _CausticsDistortionStrength: 0.075
     - _CausticsFocalDepth: 2
     - _CausticsStrength: 3.2
-    - _CausticsTextureAverage: 0.07
+    - _CausticsTextureAverage: 0.183
     - _CausticsTextureScale: 5
     - _ClipSurface: 1
     - _ClipUnderTerrain: 0
@@ -126,8 +127,8 @@ Material:
     - _OverrideReflectionCubemap: 1
     - _PlanarReflectionIntensity: 1
     - _PlanarReflectionNormalsStrength: 1
-    - _PlanarReflections: 0
-    - _ProceduralSky: 0
+    - _PlanarReflections: 1
+    - _ProceduralSky: 1
     - _Projection: 0
     - _RefractAmt: 0
     - _RefractionStrength: 1
@@ -136,8 +137,8 @@ Material:
     - _Roughness: 0
     - _S: 1
     - _Shadows: 1
-    - _ShorelineFoamMinDepth: 0.27
-    - _SkyDirectionality: 0.875
+    - _ShorelineFoamMinDepth: 4.01
+    - _SkyDirectionality: 0.8
     - _Specular: 1
     - _StartLevel: 0.157
     - _StencilFunction: 0
@@ -174,7 +175,7 @@ Material:
     - _Diffuse: {r: 0.0031596215, g: 0.00057849905, b: 0.122641504, a: 1}
     - _DiffuseGrazing: {r: 0.003921569, g: 0, b: 0.121568635, a: 1}
     - _DiffuseShadow: {r: 0.21067381, g: 0.26255617, b: 0.294, a: 1}
-    - _FoamBubbleColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FoamBubbleColor: {r: 1, g: 1, b: 1, a: 1}
     - _FoamWhiteColor: {r: 1, g: 0.99634784, b: 0.97199994, a: 0.6862745}
     - _SkyAwayFromSun: {r: 0.15419213, g: 0.22129796, b: 0.5372549, a: 1}
     - _SkyBase: {r: 0.55200005, g: 0.85242355, b: 1, a: 1}
