@@ -23,15 +23,14 @@ public class PickingEquipments : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             Destroy(other.gameObject);
-            AudioManager.instance.Play("My Fingers");
+            AudioManager.instance.Play("My Fingers", AudioManager.instance.sounds);
             // vest vibrate off
 
         }
     }
     public void OnStartDockDialogue()
     {
-        AudioManager.instance.Play("TimeToGo");
+        AudioManager.instance.Play("TimeToGo", AudioManager.instance.sounds);
         DialoguePlayer.instance.userObject.GetComponent<ContinuousMoveProviderBase>().enabled = true;
-        DialoguePlayer.instance.backPack.SetActive(false);
     }
 }

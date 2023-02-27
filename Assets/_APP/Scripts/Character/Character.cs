@@ -38,7 +38,7 @@ public class Character : MonoBehaviour
         }
         if (other.gameObject.tag == "Kitchen")
         {
-            AudioManager.instance.Play("Kitchen filthy");
+            AudioManager.instance.Play("Kitchen filthy", AudioManager.instance.sounds);
             other.gameObject.SetActive(false);
             Destroy(other.gameObject);
         }

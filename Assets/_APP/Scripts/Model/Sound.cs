@@ -12,6 +12,7 @@ public class Sound
     public float volume;
     [Range(0.1f,3.0f)]
     public float pitch;
+    public float clipLength;
 
     public bool loop;
     public bool isMale;

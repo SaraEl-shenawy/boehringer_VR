@@ -5,9 +5,7 @@ using UnityEngine.Events;
 
 public class DialoguePlayer : MonoBehaviour
 {
-    public AudioSource dialogueSource;
-
-    public GameObject backPack;
+    public GameObject box;
     public GameObject userObject;
     public GameObject femaleCharacter;
     //public GameObject maleCharacter;
@@ -30,7 +28,7 @@ public class DialoguePlayer : MonoBehaviour
     private void Start()
     {
     }
-    public IEnumerator PlayDialogueAudios(Sound[] _currentDialogue, UnityAction OnDockDialogueEnd)
+    public IEnumerator PlayDialogueAudios(Sound[] _currentDialogue, UnityAction OnDialogueEnd)
     {
         yield return new WaitForSeconds(1f);
 
@@ -45,25 +43,28 @@ public class DialoguePlayer : MonoBehaviour
             //    maleCharacter.GetComponent<Animator>().StartPlayback();
             //}
 
-            AudioManager.instance.Play(_currentDialogue[i].name);
+            AudioManager.instance.Play(_currentDialogue[i].name, AudioManager.instance.sounds);
             while (_currentDialogue[i].soundSource.GetComponent<AudioSource>().isPlaying)
             {
                 yield return null;
             }
         }
-        if (OnDockDialogueEnd != null)
+        if (OnDialogueEnd != null)
         {
-            OnDockDialogueEnd();
-            OnDockDialogueEnd = null;
+            OnDialogueEnd();
+            OnDialogueEnd = null;
         }
     }
     public void OnDockDialogueEnded()
     {
         // pickup action
-        backPack.SetActive(true);
+        box.GetComponent<Collider>().enabled = true;
         userObject.AddComponent<Rigidbody>();
         userObject.GetComponent<Collider>().enabled = true;
         userObject.GetComponent<Rigidbody>().useGravity = true;
+    }
+    public void OnClinicDialogueEnded()
+    {
 
     }
 }

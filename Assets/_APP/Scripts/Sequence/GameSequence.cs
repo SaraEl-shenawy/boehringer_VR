@@ -14,14 +14,21 @@ public class GameSequence : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Chapter 2")
         {
-            AudioManager.instance.Play("Water");
+            AudioManager.instance.Play("Water", AudioManager.instance.sounds);
             StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.dockDialogue, DialoguePlayer.instance.OnDockDialogueEnded));
             return;
         }
         if (SceneManager.GetActiveScene().name == "Chapter 3")
         {
-            AudioManager.instance.Play("Im So Tired");
+            AudioManager.instance.Play("Im So Tired", AudioManager.instance.sounds);
             checkUserAudioSource = true;
+            //user start moving to kitchen
+            return;
+        }
+        if (SceneManager.GetActiveScene().name == "Clinic")
+        {
+            AudioManager.instance.Play("Shortness of breath", AudioManager.instance.sounds);
+            StartCoroutine(OnDoctorAudioEnd(AudioManager.instance.Play("Shortness of breath", AudioManager.instance.sounds)));
             //user start moving to kitchen
             return;
         }
@@ -36,6 +43,12 @@ public class GameSequence : MonoBehaviour
                 kitchenArea.SetActive(true);
             }
         }
+    }
+
+    IEnumerator OnDoctorAudioEnd(float clipTime)
+    {
+        yield return new WaitForSeconds(clipTime);
+        UIManager.instance.ActivateFirstYesPanel();
     }
 }
 
