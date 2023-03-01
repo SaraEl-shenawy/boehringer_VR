@@ -245,6 +245,8 @@ MonoBehaviour:
   maxSpeed: 10
   speed: 0
   steeringSensitivity: 2
+  minY: 1.5
+  maxY: 3
 --- !u!114 &4055267115094326239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flock: {fileID: 0}
-  inRange: 1
+  inRange: 2
 --- !u!114 &6945665278286771426
 MonoBehaviour:
   m_ObjectHideFlags: 0

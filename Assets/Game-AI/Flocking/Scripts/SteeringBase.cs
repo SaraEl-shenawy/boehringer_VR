@@ -10,7 +10,7 @@ public class SteeringBase : MonoBehaviour
     float speed;
     [SerializeField]
     float steeringSensitivity = 10;
-
+    [SerializeField] float minY, maxY;
     private Rigidbody rb;
     private IEnumerable<ISteer> steerBehaviors;
     private Animator animator;
@@ -46,5 +46,9 @@ public class SteeringBase : MonoBehaviour
 
         rb.velocity = Vector3.Lerp(rb.velocity, velocity, Time.deltaTime);
         animator.SetFloat("Speed", velocity.magnitude * 2);
+        transform.localPosition = new Vector3(
+    transform.localPosition.x,
+    Mathf.Clamp(transform.localPosition.y, minY, maxY),
+    transform.localPosition.z);
     }
 }
