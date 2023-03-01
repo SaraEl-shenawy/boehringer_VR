@@ -23,7 +23,7 @@ public class Flock : MonoBehaviour
         for (int i = 0; i < fishCount; i++)
         {
             GameObject fishInstance = Instantiate(fish[Random.Range(0, fish.Length)], transform);
-            fishInstance.transform.position = new Vector3(Random.Range(-tankLimits.x, tankLimits.x),
+            fishInstance.transform.localPosition = new Vector3(Random.Range(-tankLimits.x, tankLimits.x),
                 Random.Range(-tankLimits.y, tankLimits.y),
                 Random.Range(-tankLimits.z, tankLimits.z));
             fishInstance.AddComponent<Seek>().target = target;

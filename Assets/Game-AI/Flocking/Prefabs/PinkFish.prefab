@@ -258,6 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flock: {fileID: 0}
+  inRange: 1
 --- !u!114 &6945665278286771426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,6 +272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flock: {fileID: 0}
+  inRange: 0.5
+  dir: {x: 0, y: 0, z: 0}
 --- !u!114 &8408975338427075491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,6 +405,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
