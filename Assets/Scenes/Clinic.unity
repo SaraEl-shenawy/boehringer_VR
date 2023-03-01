@@ -356,6 +356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Doctor character sitting
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bdd8a2d370e22744845f3f9c0a0c0d5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bdd8a2d370e22744845f3f9c0a0c0d5, type: 3}
 --- !u!1001 &175943803
@@ -635,8 +639,8 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     isMale: 0
-    animationClipName: Doctor Animation
-    soundSource: {fileID: 747936059}
+    animationClipName: Take 001
+    soundSource: {fileID: 468260717}
     source: {fileID: 0}
   dockDialogue: []
   outdoorHouseDialogue: []
@@ -658,8 +662,8 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     isMale: 1
-    animationClipName: 
-    soundSource: {fileID: 747936059}
+    animationClipName: Take 001
+    soundSource: {fileID: 468260717}
     source: {fileID: 0}
   secondClinicDialogue:
   - name: Yes as well
@@ -689,9 +693,33 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     isMale: 1
-    animationClipName: 
-    soundSource: {fileID: 747936059}
+    animationClipName: Take 001
+    soundSource: {fileID: 468260717}
     source: {fileID: 0}
+--- !u!1 &468260717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+  m_PrefabInstance: {fileID: 2105845494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &468260718
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468260717}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69d24254e5d3bfe4a9411076aea5e0d2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &572873952
 GameObject:
   m_ObjectHideFlags: 0
@@ -3216,7 +3244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18304d48255b8a42995435a1be870c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backPack: {fileID: 0}
+  box: {fileID: 0}
   userObject: {fileID: 0}
   femaleCharacter: {fileID: 0}
 --- !u!1 &2042805781
@@ -3403,3 +3431,64 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &2105845494
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.008
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.233
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_Name
+      value: Doctor_Idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3f8df0b865bae8941898d4129a29d2b1, type: 3}
