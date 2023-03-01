@@ -230,70 +230,7 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Female-Walk' has import animation warnings
-      that might lower retargeting quality:\n\t'CC_Base_NeckTwist02' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-6.10  M' has import animation warnings that might lower retargeting
-      quality:\n\t'CC_Base_NeckTwist02' is inbetween humanoid transforms and has
-      rotation animation that will be discarded.\n\nClip 'Female-6.9 F' has import
-      animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-6.8 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-6.6 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-6.4 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-6.3 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-6.2 M' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-6.1 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-5.4 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_L_Index3'
-      has scale animation that will be discarded.\n\nClip 'Female-5.3 F' has import
-      animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-5.2 M' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_L_Thumb3'
-      has scale animation that will be discarded.\n\nClip 'Female-5.1 F' has import
-      animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-4.6' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-4.4' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_L_Ring1'
-      has scale animation that will be discarded.\n\t'CC_Base_L_Mid1' has scale animation
-      that will be discarded.\n\t'CC_Base_L_Index1' has scale animation that will
-      be discarded.\n\t'CC_Base_L_Index2' has scale animation that will be discarded.\n\t'CC_Base_L_Thumb1'
-      has scale animation that will be discarded.\n\nClip 'Female-4.2 F' has import
-      animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-3.4 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-3.3 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-3.2 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-3.1 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-2.7F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-2.7 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-2.6 M' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-2.5 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-2.4 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-2.3 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-2.2 M' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Female-2.1 F' has import animation warnings that might lower retargeting quality:\n\t'CC_Base_NeckTwist02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0

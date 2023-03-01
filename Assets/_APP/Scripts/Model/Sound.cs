@@ -16,6 +16,8 @@ public class Sound
 
     public bool loop;
     public bool isMale;
+    public bool isFemale;
+    public bool isDoctor;
     public string animationClipName;
     public GameObject soundSource;
 

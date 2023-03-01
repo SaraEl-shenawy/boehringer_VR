@@ -9,6 +9,7 @@ public class DialoguePlayer : MonoBehaviour
     public GameObject userObject;
     public GameObject femaleCharacter;
     //public GameObject maleCharacter;
+    public GameObject doctorCharacter;
     public static DialoguePlayer instance;
 
     private void Awake()
@@ -34,7 +35,7 @@ public class DialoguePlayer : MonoBehaviour
 
         for (int i = 0; i < _currentDialogue.Length; i++)
         {
-            if (!_currentDialogue[i].isMale)
+            if (_currentDialogue[i].isFemale)
             {
                 femaleCharacter.GetComponent<Animator>().Play(_currentDialogue[i].animationClipName);
             }
@@ -42,6 +43,10 @@ public class DialoguePlayer : MonoBehaviour
             //{
             //    maleCharacter.GetComponent<Animator>().StartPlayback();
             //}
+            if (_currentDialogue[i].isDoctor)
+            {
+                doctorCharacter.GetComponent<Animator>().Play(_currentDialogue[i].animationClipName);
+            }
 
             AudioManager.instance.Play(_currentDialogue[i].name, AudioManager.instance.sounds);
             while (_currentDialogue[i].soundSource.GetComponent<AudioSource>().isPlaying)

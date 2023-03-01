@@ -43,6 +43,7 @@ public class UIManager : MonoBehaviour
     public void OnPressFirstYes()
     {
         StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.firstClinicDialogue, ActivateSecondYesPanel));
+        firstYesButtonPanel.SetActive(false);
     }
     public void OnPressSecondYes()
     {

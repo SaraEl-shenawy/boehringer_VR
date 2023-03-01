@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1301886048}
-  m_IndirectSpecularColor: {r: 0.44535965, g: 0.5102949, b: 0.59146065, a: 1}
+  m_IndirectSpecularColor: {r: 0.45063752, g: 0.5159729, b: 0.5976319, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8038,6 +8038,7 @@ MonoBehaviour:
   box: {fileID: 1646097233}
   userObject: {fileID: 1725141083}
   femaleCharacter: {fileID: 142882372}
+  doctorCharacter: {fileID: 0}
 --- !u!82 &392269590
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9048,7 +9049,9 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 1
+    isMale: 0
+    isFemale: 0
+    isDoctor: 0
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}
@@ -9059,6 +9062,8 @@ MonoBehaviour:
     clipLength: 0
     loop: 1
     isMale: 0
+    isFemale: 0
+    isDoctor: 0
     animationClipName: 
     soundSource: {fileID: 1367970410}
     source: {fileID: 0}
@@ -9069,7 +9074,9 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 1
+    isMale: 0
+    isFemale: 0
+    isDoctor: 0
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}
@@ -9080,6 +9087,8 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     isMale: 0
+    isFemale: 1
+    isDoctor: 0
     animationClipName: Female-2_2 M
     soundSource: {fileID: 142882372}
     source: {fileID: 0}
@@ -9089,7 +9098,9 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 1
+    isMale: 0
+    isFemale: 0
+    isDoctor: 0
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}
@@ -9100,7 +9111,9 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 1
+    isMale: 0
+    isFemale: 0
+    isDoctor: 0
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}
@@ -9111,6 +9124,8 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     isMale: 0
+    isFemale: 1
+    isDoctor: 0
     animationClipName: Female-2_6 M
     soundSource: {fileID: 142882372}
     source: {fileID: 0}
@@ -9120,7 +9135,9 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 1
+    isMale: 0
+    isFemale: 0
+    isDoctor: 0
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}
