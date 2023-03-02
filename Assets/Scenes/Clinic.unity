@@ -1827,6 +1827,7 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     isMale: 0
+    isFemale: 0
     isDoctor: 1
     animationClipName: Doctor_Imported_Doctor Talk-4_1
     soundSource: {fileID: 0}
@@ -1841,6 +1842,7 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     isMale: 1
+    isFemale: 0
     isDoctor: 0
     animationClipName: 
     soundSource: {fileID: 867567418}
@@ -1852,6 +1854,7 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     isMale: 0
+    isFemale: 0
     isDoctor: 1
     animationClipName: Doctor_Imported_Doctor Talk-4_3
     soundSource: {fileID: 0}
@@ -1864,6 +1867,7 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     isMale: 1
+    isFemale: 0
     isDoctor: 0
     animationClipName: 
     soundSource: {fileID: 867567418}
@@ -1875,6 +1879,7 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     isMale: 1
+    isFemale: 0
     isDoctor: 0
     animationClipName: 
     soundSource: {fileID: 867567418}
@@ -1886,6 +1891,7 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     isMale: 0
+    isFemale: 0
     isDoctor: 1
     animationClipName: Doctor_Imported_Doctor Talk-4_7
     soundSource: {fileID: 0}
@@ -4435,7 +4441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2042805782
 RectTransform:
   m_ObjectHideFlags: 0

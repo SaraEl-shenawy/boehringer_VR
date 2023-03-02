@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1301886048}
-  m_IndirectSpecularColor: {r: 0.4604481, g: 0.5266461, b: 0.6092583, a: 1}
+  m_IndirectSpecularColor: {r: 0.46271396, g: 0.52897376, b: 0.61158514, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7464,7 +7464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 381997683}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11089,7 +11089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 657991798}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fishing scene (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14579,7 +14579,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1511926328}
   m_Father: {fileID: 1208716927}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15270,7 +15271,7 @@ GameObject:
   - component: {fileID: 886018146}
   - component: {fileID: 886018145}
   - component: {fileID: 886018144}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: FishingItems
   m_Icon: {fileID: 0}
@@ -15561,6 +15562,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4246442367723126, guid: c23cafc0b68a65443a7bdc0874b0bf70, type: 3}
   m_PrefabInstance: {fileID: 899844541}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &901990039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 868121434}
+    m_Modifications:
+    - target: {fileID: 8431119409128458376, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_Name
+      value: Dots particle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
 --- !u!1001 &905922843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17441,6 +17499,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToolBoxV6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 81d5adfb5f63cf34486b15789ff9ae40, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606249047482833812, guid: 81d5adfb5f63cf34486b15789ff9ae40, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246788448889810601, guid: 81d5adfb5f63cf34486b15789ff9ae40, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81d5adfb5f63cf34486b15789ff9ae40, type: 3}
 --- !u!4 &1036241375 stripped
@@ -17573,7 +17643,7 @@ GameObject:
   - component: {fileID: 1066838894}
   - component: {fileID: 1066838893}
   - component: {fileID: 1066838892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: FishingItems
   m_Icon: {fileID: 0}
@@ -18652,7 +18722,7 @@ GameObject:
   - component: {fileID: 1184408867}
   - component: {fileID: 1184408869}
   - component: {fileID: 1184408868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Line02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22713,6 +22783,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7715000247739916280, guid: 7d6bac6aace774448a66297e2bc5bd59, type: 3}
   m_PrefabInstance: {fileID: 1511816277}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1511926328 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8431119409128458377, guid: 147d19a2f45dbe84d83119f9df23b6ab, type: 3}
+  m_PrefabInstance: {fileID: 901990039}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1517710557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24326,7 +24401,7 @@ GameObject:
   - component: {fileID: 1646097236}
   - component: {fileID: 1646097235}
   - component: {fileID: 1646097239}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25217,7 +25292,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725141083}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5aca1fc346609b54dbb0adba4664854b, type: 3}
   m_Name: 
@@ -27281,7 +27356,7 @@ GameObject:
   - component: {fileID: 1909619341}
   - component: {fileID: 1909619343}
   - component: {fileID: 1909619342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fishOBJ:Line01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28791,7 +28866,7 @@ GameObject:
   - component: {fileID: 1979633221}
   - component: {fileID: 1979633220}
   - component: {fileID: 1979633219}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: FishingItems
   m_Icon: {fileID: 0}
@@ -34466,7 +34541,7 @@ GameObject:
   - component: {fileID: 6443853425360892445}
   - component: {fileID: 8164586626791773820}
   - component: {fileID: 814999408389732533}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35701,7 +35776,7 @@ GameObject:
   - component: {fileID: 2783024236163853449}
   - component: {fileID: 5238051212973135370}
   - component: {fileID: 939512897713056766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Line02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37886,7 +37961,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450653046612074}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IceBoxUpdated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43778,7 +43853,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1395194924764691862}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fishing scene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46922,7 +46997,7 @@ GameObject:
   - component: {fileID: 4259133800910785651}
   - component: {fileID: 9175611736651471478}
   - component: {fileID: 7800777314055980984}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 2_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47269,7 +47344,7 @@ GameObject:
   - component: {fileID: 7122219586969797344}
   - component: {fileID: 8474402195371621658}
   - component: {fileID: 3792363809403588169}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fishOBJ:Line01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47561,7 +47636,7 @@ GameObject:
   - component: {fileID: 5576632850210989195}
   - component: {fileID: 2395829760508586862}
   - component: {fileID: 4537512027992779853}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ice Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55401,7 +55476,7 @@ GameObject:
   - component: {fileID: 7550299756575354785}
   - component: {fileID: 7975569553586966894}
   - component: {fileID: 1545573456736789090}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 1_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61007,7 +61082,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2732273084268534434}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bucket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66160,7 +66235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7387122747139985406}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74398,7 +74473,7 @@ GameObject:
   - component: {fileID: 5544887752993909397}
   - component: {fileID: 3659570754300864649}
   - component: {fileID: 4740468064011257437}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85569,7 +85644,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 254607591670161210}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91932,7 +92007,7 @@ GameObject:
   - component: {fileID: 9010647870244643438}
   - component: {fileID: 2326711235995931688}
   - component: {fileID: 3292192013533287407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94695,7 +94770,7 @@ GameObject:
   - component: {fileID: 5047707537356244143}
   - component: {fileID: 6692240548097848593}
   - component: {fileID: 400655855615800152}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: group12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
