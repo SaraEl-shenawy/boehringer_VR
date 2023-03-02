@@ -1,17 +1,36 @@
 fileFormatVersion: 2
-guid: 0c8e79fc546aeda468ff72e94bb14137
+guid: bc43b94b37451744491bfc7ec577855a
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -623603649343465320
-    second: Scene
-  externalObjects:
+      74: -5099809608102117407
+    second: WingFlap
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 2be4c52f3f92dfa46a5313032c28f35d, type: 2}
+      74: -4831486019421190710
+    second: Soar
+  - first:
+      74: -1915230525465444799
+    second: WingFlap.001
+  - first:
+      74: 1972200479035131056
+    second: Wind-Noise
+  - first:
+      74: 4781951162920444690
+    second: Armature|ArmatureAction
+  - first:
+      74: -1422011007694221501
+    second: Armature|ArmatureAction.001
+  - first:
+      74: 6093225430303232669
+    second: Armature|ArmatureAction.002
+  - first:
+      74: -8718967029479517697
+    second: Armature|ArmatureAction.006
+  - first:
+      74: 5508062484833401239
+    second: Armature|PoseLib
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
