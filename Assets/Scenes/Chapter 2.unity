@@ -7713,6 +7713,7 @@ MonoBehaviour:
   box: {fileID: 1646097233}
   userObject: {fileID: 1725141083}
   femaleCharacter: {fileID: 142882372}
+  maleCharacter: {fileID: 0}
   doctorCharacter: {fileID: 0}
 --- !u!82 &392269590
 AudioSource:
@@ -8650,9 +8651,7 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 0
-    isFemale: 0
-    isDoctor: 0
+    npcType: 0
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}
@@ -8662,9 +8661,7 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 1
-    isMale: 0
-    isFemale: 0
-    isDoctor: 0
+    npcType: 0
     animationClipName: 
     soundSource: {fileID: 1367970410}
     source: {fileID: 0}
@@ -8675,9 +8672,7 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 0
-    isFemale: 0
-    isDoctor: 0
+    npcType: 0
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}
@@ -8687,9 +8682,7 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 0
-    isFemale: 1
-    isDoctor: 0
+    npcType: 1
     animationClipName: Female-2_2 M
     soundSource: {fileID: 142882372}
     source: {fileID: 0}
@@ -8699,9 +8692,7 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 0
-    isFemale: 0
-    isDoctor: 0
+    npcType: 0
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}
@@ -8712,9 +8703,7 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 0
-    isFemale: 0
-    isDoctor: 0
+    npcType: 0
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}
@@ -8724,9 +8713,7 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 0
-    isFemale: 1
-    isDoctor: 0
+    npcType: 1
     animationClipName: Female-2_6 M
     soundSource: {fileID: 142882372}
     source: {fileID: 0}
@@ -8736,9 +8723,7 @@ MonoBehaviour:
     pitch: 1
     clipLength: 0
     loop: 0
-    isMale: 0
-    isFemale: 0
-    isDoctor: 0
+    npcType: 0
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}

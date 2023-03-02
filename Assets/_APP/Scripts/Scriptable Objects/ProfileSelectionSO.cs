@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ProfileData", menuName = "ScriptableObjects/ProfileData", order = 1)]
 public class ProfileSelectionSO : MonoBehaviour
 {
+    public enum profileType { male, female };
 
 
 

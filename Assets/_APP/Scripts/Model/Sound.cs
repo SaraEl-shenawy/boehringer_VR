@@ -2,6 +2,8 @@ using UnityEngine.Audio;
 using UnityEngine;
 using System;
 
+public enum NPCTypeEnum { male, female, doctor };//Male->0, Female->1, Doctor->2
+
 [Serializable]
 public class Sound 
 {
@@ -15,9 +17,9 @@ public class Sound
     public float clipLength;
 
     public bool loop;
-    public bool isMale;
-    public bool isFemale;
-    public bool isDoctor;
+    // enum
+    public NPCTypeEnum npcType;
+    
     public string animationClipName;
     public GameObject soundSource;
 

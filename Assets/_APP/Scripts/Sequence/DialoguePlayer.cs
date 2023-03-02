@@ -8,7 +8,7 @@ public class DialoguePlayer : MonoBehaviour
     public GameObject box;
     public GameObject userObject;
     public GameObject femaleCharacter;
-    //public GameObject maleCharacter;
+    public GameObject maleCharacter;
     public GameObject doctorCharacter;
     public static DialoguePlayer instance;
 
@@ -35,15 +35,15 @@ public class DialoguePlayer : MonoBehaviour
 
         for (int i = 0; i < _currentDialogue.Length; i++)
         {
-            if (_currentDialogue[i].isFemale)
+            if (_currentDialogue[i].npcType == NPCTypeEnum.male)
+            {
+                maleCharacter.GetComponent<Animator>().Play(_currentDialogue[i].animationClipName);
+            }
+            if (_currentDialogue[i].npcType == NPCTypeEnum.female)
             {
                 femaleCharacter.GetComponent<Animator>().Play(_currentDialogue[i].animationClipName);
             }
-            //else
-            //{
-            //    maleCharacter.GetComponent<Animator>().StartPlayback();
-            //}
-            if (_currentDialogue[i].isDoctor)
+            if (_currentDialogue[i].npcType == NPCTypeEnum.doctor)
             {
                 doctorCharacter.GetComponent<Animator>().Play(_currentDialogue[i].animationClipName);
             }
