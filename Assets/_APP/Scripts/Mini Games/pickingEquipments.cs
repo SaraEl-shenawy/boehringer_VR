@@ -17,6 +17,7 @@ public class PickingEquipments : MonoBehaviour
             if (counter >= 3)
             {
                 OnStartDockDialogue();
+                this.GetComponentInChildren<Animator>().enabled = true;
             }
         }
         if (other.gameObject.tag == "Fruits")

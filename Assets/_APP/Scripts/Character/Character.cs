@@ -20,7 +20,6 @@ public class Character : MonoBehaviour
     //    //clipSettings.loopTime = true;
     //    //_animationClip.wrapMode = WrapMode.Loop; 
     //    yield return new WaitForSeconds(_audioClip.length);
-
     //}
 
     private void OnTriggerEnter(Collider other)
