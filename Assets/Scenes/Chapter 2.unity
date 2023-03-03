@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1301886048}
-  m_IndirectSpecularColor: {r: 0.45544124, g: 0.5211863, b: 0.6032099, a: 1}
+  m_IndirectSpecularColor: {r: 0.45678592, g: 0.5232301, b: 0.6058483, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8126,25 +8126,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4246442367723126, guid: c23cafc0b68a65443a7bdc0874b0bf70, type: 3}
   m_PrefabInstance: {fileID: 406693270}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &423417823
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132149577280141}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 26eaa6d4daa89194b930114421798c0f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &425631322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18836,25 +18817,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1081925415
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148088300149}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 26eaa6d4daa89194b930114421798c0f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1085624309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1656238630576358638, guid: f9e4696223ed14149aba702e4d250f26, type: 3}
@@ -20480,25 +20442,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4283090837937716, guid: 5f8ed2e0052842b4e87156267e717397, type: 3}
   m_PrefabInstance: {fileID: 1230886044}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1238445208
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148246254020}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 26eaa6d4daa89194b930114421798c0f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1245710233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25879,25 +25822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1785ea50398d81d469a4de6365e6403d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &1648760471
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132147582446533}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 26eaa6d4daa89194b930114421798c0f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1649332878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39544,8 +39468,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652059857279}
-  - component: {fileID: 1648760471}
   - component: {fileID: 919132147582446534}
+  - component: {fileID: 919132147582446535}
   m_Layer: 0
   m_Name: SeaGullLow2 (4)
   m_TagString: Untagged
@@ -39582,6 +39506,25 @@ MonoBehaviour:
   - {fileID: 1896949314}
   - {fileID: 814491386}
   MovementSpeed: 10
+--- !u!95 &919132147582446535
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147582446533}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 26eaa6d4daa89194b930114421798c0f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &919132148088300149
 GameObject:
   m_ObjectHideFlags: 0
@@ -39591,8 +39534,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652626499791}
-  - component: {fileID: 1081925415}
   - component: {fileID: 919132148088300150}
+  - component: {fileID: 919132148088300151}
   m_Layer: 0
   m_Name: SeaGullLow2 (2)
   m_TagString: Untagged
@@ -39629,6 +39572,25 @@ MonoBehaviour:
   - {fileID: 1983156337}
   - {fileID: 1863867465}
   MovementSpeed: 10
+--- !u!95 &919132148088300151
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148088300149}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 26eaa6d4daa89194b930114421798c0f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &919132148111519627
 GameObject:
   m_ObjectHideFlags: 0
@@ -39654,8 +39616,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652503460734}
-  - component: {fileID: 1238445208}
   - component: {fileID: 919132148246254021}
+  - component: {fileID: 919132148246254022}
   m_Layer: 0
   m_Name: SeaGullLow2 (1)
   m_TagString: Untagged
@@ -39692,6 +39654,25 @@ MonoBehaviour:
   - {fileID: 2124813096}
   - {fileID: 2105786475}
   MovementSpeed: 10
+--- !u!95 &919132148246254022
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148246254020}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 26eaa6d4daa89194b930114421798c0f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &919132148380238252
 GameObject:
   m_ObjectHideFlags: 0
@@ -39749,8 +39730,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450653310169143}
-  - component: {fileID: 423417823}
   - component: {fileID: 919132149577280142}
+  - component: {fileID: 919132149577280143}
   m_Layer: 0
   m_Name: SeaGullLow2 (3)
   m_TagString: Untagged
@@ -39787,6 +39768,25 @@ MonoBehaviour:
   - {fileID: 482404960}
   - {fileID: 965616396}
   MovementSpeed: 10
+--- !u!95 &919132149577280143
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149577280141}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 26eaa6d4daa89194b930114421798c0f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!23 &919787245191874190
 MeshRenderer:
   m_ObjectHideFlags: 0

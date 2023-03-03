@@ -106,51 +106,51 @@ public class AudioManager : MonoBehaviour
                 clipLength = item.clipLength;
             }
         }
-        foreach (var item in sounds)
-        {
-            if (item.name == _targetName)
-            {
-                item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-                item.soundSource.GetComponent<AudioSource>().Play();
-                clipLength = item.clipLength;
-            }
-        }
-        foreach (var item in dockDialogue)
-        {
-            if (item.name == _targetName)
-            {
-                item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-                item.soundSource.GetComponent<AudioSource>().Play();
-                clipLength = item.clipLength;
-            }
-        }
-        foreach (var item in outdoorHouseDialogue)
-        {
-            if (item.name == _targetName)
-            {
-                item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-                item.soundSource.GetComponent<AudioSource>().Play();
-                clipLength = item.clipLength;
-            }
-        }
-        foreach (var item in firstClinicDialogue)
-        {
-            if (item.name == _targetName)
-            {
-                item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-                item.soundSource.GetComponent<AudioSource>().Play();
-                clipLength = item.clipLength;
-            }
-        }
-        foreach (var item in secondClinicDialogue)
-        {
-            if (item.name == _targetName)
-            {
-                item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-                item.soundSource.GetComponent<AudioSource>().Play();
-                clipLength = item.clipLength;
-            }
-        }
+        //foreach (var item in sounds)
+        //{
+        //    if (item.name == _targetName)
+        //    {
+        //        item.soundSource.GetComponent<AudioSource>().clip = item.clip;
+        //        item.soundSource.GetComponent<AudioSource>().Play();
+        //        clipLength = item.clipLength;
+        //    }
+        //}
+        //foreach (var item in dockDialogue)
+        //{
+        //    if (item.name == _targetName)
+        //    {
+        //        item.soundSource.GetComponent<AudioSource>().clip = item.clip;
+        //        item.soundSource.GetComponent<AudioSource>().Play();
+        //        clipLength = item.clipLength;
+        //    }
+        //}
+        //foreach (var item in outdoorHouseDialogue)
+        //{
+        //    if (item.name == _targetName)
+        //    {
+        //        item.soundSource.GetComponent<AudioSource>().clip = item.clip;
+        //        item.soundSource.GetComponent<AudioSource>().Play();
+        //        clipLength = item.clipLength;
+        //    }
+        //}
+        //foreach (var item in firstClinicDialogue)
+        //{
+        //    if (item.name == _targetName)
+        //    {
+        //        item.soundSource.GetComponent<AudioSource>().clip = item.clip;
+        //        item.soundSource.GetComponent<AudioSource>().Play();
+        //        clipLength = item.clipLength;
+        //    }
+        //}
+        //foreach (var item in secondClinicDialogue)
+        //{
+        //    if (item.name == _targetName)
+        //    {
+        //        item.soundSource.GetComponent<AudioSource>().clip = item.clip;
+        //        item.soundSource.GetComponent<AudioSource>().Play();
+        //        clipLength = item.clipLength;
+        //    }
+        //}
         return clipLength;
     }
     public void Pause(string _targetName)
