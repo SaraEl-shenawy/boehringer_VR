@@ -4,72 +4,42 @@ using UnityEngine;
 
 public class MovementPath : MonoBehaviour
 {
-    [SerializeField] Transform[] waypoints;
-    private Transform targetWaypoint;
-    private int TargetWaypointIndex = 0;
-    private float MinDistance = 0.1f;
-    private int LastWaypointIndex;
-
-    public float MovementSpeed = 10.0f;
-    private float RotationSpeed = 8.0f;
+    [SerializeField] Waypoints way;
+    public float speed = 5;
+    private int next = 0;
+    float targetY;
+    float velocityTurn;
 
     void Start()
     {
-        LastWaypointIndex = waypoints.Length - 1;
-        targetWaypoint = waypoints[TargetWaypointIndex];
+        transform.position = way.WayPoints[0].position;
     }
 
 
     void Update()
     {
-        float movementStep = MovementSpeed * Time.deltaTime;
-        float rotationStep = RotationSpeed * Time.deltaTime;
-
-        Vector3 directionToTarget = targetWaypoint.position - transform.position;
-        Quaternion rotationToTarget = Quaternion.LookRotation(directionToTarget);
-
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotationToTarget, rotationStep);
-
-        Debug.DrawRay(transform.position, transform.forward * 50f, Color.green, 0f);
-        Debug.DrawRay(transform.position, directionToTarget, Color.red, 0f);
-
-        float distance = Vector3.Distance(transform.position, targetWaypoint.position);
-        CheckDistanceToWaypoint(distance);
-
-        transform.position = Vector3.MoveTowards(transform.position, targetWaypoint.position, movementStep);
-    }
-
-
-    void CheckDistanceToWaypoint(float currentDistance)
-    {
-        if (currentDistance <= MinDistance)
+        if ((transform.position - way.WayPoints[next].position).sqrMagnitude < 0.01f)
         {
-            TargetWaypointIndex++;
-            UpdateTargetWaypoint();
+            next++;
+            if (next >= way.WayPoints.Length)
+            {
+                next = 0;
+
+            }
         }
+        transform.position = Vector3.MoveTowards(transform.position, way.WayPoints[next].position, Time.deltaTime * speed);
+        Vector3 Dir = (way.WayPoints[next].position - transform.position).normalized;
+        //  Debug.Log(Dir);
+        targetY = Mathf.Atan2(Dir.x, Dir.z) * Mathf.Rad2Deg;
+        transform.eulerAngles = Vector3.up * Mathf.SmoothDampAngle(transform.eulerAngles.y, targetY, ref velocityTurn, 0.5f);
+
     }
 
 
-    void UpdateTargetWaypoint()
-    {
-        if (TargetWaypointIndex > LastWaypointIndex)
-        {
-            TargetWaypointIndex = 0;
-        }
 
-        targetWaypoint = waypoints[TargetWaypointIndex];
-    }
 
-    private void OnDrawGizmos()
-    {
-        if (waypoints == null)
-            return;
-        for (int i = 0; i < waypoints.Length; i++)
-        {
-            Gizmos.DrawSphere(waypoints[i].position, 0.2f);
 
-            if (i + 1 < waypoints.Length)
-                Gizmos.DrawLine(waypoints[i].position, waypoints[i + 1].position);
-        }
-    }
+
+
+
 }
