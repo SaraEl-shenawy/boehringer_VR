@@ -142,11 +142,45 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: "Invalid copied Avatar Rig Configuration:\n\tNo human bone found.
-      Ensure both rig type match\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Doctor-Walk' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'CC_Base_L_ToeBase' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'CC_Base_R_ToeBase'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_NeckTwist02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Doctor Talk-6.7 M' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CC_Base_L_ToeBase'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_R_ToeBase'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_NeckTwist02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Doctor Talk-6.7 F' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CC_Base_L_ToeBase'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_R_ToeBase'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_NeckTwist02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Doctor Talk-6.5' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CC_Base_R_ToeBase'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_NeckTwist02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Doctor Talk-4.7' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CC_Base_R_ToeBase'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_NeckTwist02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Doctor Talk-4.5' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CC_Base_L_ToeBase'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_R_ToeBase'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_NeckTwist02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Doctor Talk-4.3' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CC_Base_R_ToeBase'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'CC_Base_NeckTwist02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Doctor Talk-4.1' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'CC_Base_NeckTwist02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
