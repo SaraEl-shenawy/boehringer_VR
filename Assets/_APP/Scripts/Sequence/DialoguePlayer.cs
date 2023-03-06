@@ -48,7 +48,7 @@ public class DialoguePlayer : MonoBehaviour
                 doctorCharacter.GetComponent<Animator>().Play(_currentDialogue[i].animationClipName);
             }
 
-            AudioManager.instance.Play(_currentDialogue[i].name, AudioManager.instance.sounds);
+            AudioManager.instance.Play(_currentDialogue[i].name, _currentDialogue);
             while (_currentDialogue[i].soundSource.GetComponent<AudioSource>().isPlaying)
             {
                 yield return null;

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0101f31501b489547b64ae671dc8a41c, type: 3}
+  m_Name: Male ProfileData
+  m_EditorClassIdentifier: 
+  maleTalk_2_1M: {fileID: 8300000, guid: 5f4ac9363a3b21f40987ad7025d47fa1, type: 3}
+  maleTalk_2_2F: {fileID: 8300000, guid: bec54330a8a787c46a93b6313550db75, type: 3}
+  maleTalk_2_3M: {fileID: 8300000, guid: df0eaa99e2bdfaf4d8e1c35ec063aafd, type: 3}
+  maleTalk_2_4M: {fileID: 8300000, guid: ae549611337050a478d8a22376ec7aa7, type: 3}
+  maleTalk_2_5M: {fileID: 8300000, guid: ac59f67e9d5f3f24d99d86f6b47c54b1, type: 3}
+  maleTalk_2_6F: {fileID: 8300000, guid: 81f97e9acafd2594c97e9a47def229cc, type: 3}
+  maleTalk_2_7M: {fileID: 8300000, guid: 7d85f5251a055b340a61ec234ce13c90, type: 3}
+  maleTalk_3_1M: {fileID: 8300000, guid: 2445e21095ff440419ddd6fcfd26c6df, type: 3}
+  maleTalk_3_2M: {fileID: 8300000, guid: 19801927845fab747ada0e2c023eb714, type: 3}
+  maleTalk_3_3M: {fileID: 8300000, guid: 4b6468da1cedf2443b65f3d054e138e5, type: 3}
+  maleTalk_3_4M__New: {fileID: 8300000, guid: 4ef0062ebe08661418af5b36a99291a4, type: 3}
+  maleTalk_4_2M: {fileID: 8300000, guid: 65e65fad8c7d8f341bdf8b69310b86e8, type: 3}
+  maleTalk_4_4M: {fileID: 8300000, guid: 62a661f5cfb7ae64383ee67db3a050ee, type: 3}
+  maleTalk_4_6M: {fileID: 8300000, guid: 61641e00f57613e42b7bd3e833f927d3, type: 3}
+  maleTalk_5_1M: {fileID: 8300000, guid: bda4323eb72134c49ba5977c5fbfe76c, type: 3}
+  maleTalk_5_2F: {fileID: 8300000, guid: 65b66f04519b7e4419ce85a8bac27742, type: 3}
+  maleTalk_5_3M: {fileID: 8300000, guid: c1197aca57410924e854cf3475dd8e26, type: 3}
+  maleTalk_5_4M: {fileID: 8300000, guid: 2eb38cd2c4bf0eb488543ca5d1b6c651, type: 3}
+  maleTalk_6_1M: {fileID: 8300000, guid: 59a19d95e53008442b457205447ee05a, type: 3}
+  maleTalk_6_2F: {fileID: 8300000, guid: c3d096f7eba8c3746a8d85093bde199c, type: 3}
+  maleTalk_6_3M: {fileID: 8300000, guid: 30d4034c74ec64e40ae00cc511381f9f, type: 3}
+  maleTalk_6_4M: {fileID: 8300000, guid: a2de44ab1d3eba94db31eace910490e3, type: 3}
+  maleTalk_6_6M: {fileID: 8300000, guid: 8dc158a0466a3e74e95ed4e9e12dedcc, type: 3}
+  maleTalk_6_8M: {fileID: 8300000, guid: 56100963efc551747aa345eb14ef3f56, type: 3}
+  maleTalk_6_9M: {fileID: 8300000, guid: f940a02639da19e4eaf2167a475db14a, type: 3}
+  maleTalk_6_10M: {fileID: 8300000, guid: 0e58e3485f7cd1448b108d5ca4ddedcf, type: 3}

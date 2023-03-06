@@ -2,7 +2,7 @@ using UnityEngine.Audio;
 using UnityEngine;
 using System;
 
-public enum NPCTypeEnum { male, female, doctor };//Male->0, Female->1, Doctor->2
+public enum NPCTypeEnum {user, male, female, doctor };//Male->0, Female->1, Doctor->2
 
 [Serializable]
 public class Sound 

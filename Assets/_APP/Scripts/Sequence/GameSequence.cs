@@ -32,6 +32,12 @@ public class GameSequence : MonoBehaviour
             //user start moving to kitchen
             return;
         }
+        if (SceneManager.GetActiveScene().name == "Basketball Scene")
+        {
+            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.secondBasketballDialogue, null));
+            //user start moving to kitchen
+            return;
+        }
     }
     private void Update()
     {
