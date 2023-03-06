@@ -11,6 +11,8 @@ public class AudioManager : MonoBehaviour
     public Sound[] outdoorHouseDialogue;
     public Sound[] firstClinicDialogue;
     public Sound[] secondClinicDialogue;
+    public Sound[] firstBasketballDialogue;
+    public Sound[] secondBasketballDialogue;
 
     float clipLength;
 
@@ -82,6 +84,19 @@ public class AudioManager : MonoBehaviour
             }
         }
         foreach (Sound s in secondClinicDialogue)
+        {
+            if (s.soundSource.GetComponent<AudioSource>() == null)
+            {
+                s.source = s.soundSource.AddComponent<AudioSource>();
+                s.source.spatialBlend = 1f;
+                s.source.clip = s.clip;
+
+                s.source.volume = s.volume;
+                s.source.pitch = s.pitch;
+                s.source.loop = s.loop;
+            }
+        }
+        foreach (Sound s in firstBasketballDialogue)
         {
             if (s.soundSource.GetComponent<AudioSource>() == null)
             {
