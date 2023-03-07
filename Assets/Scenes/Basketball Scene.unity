@@ -2024,7 +2024,7 @@ MonoBehaviour:
     clipLength: 0
     loop: 0
     npcType: 2
-    animationClipName: Female-6_3 F
+    animationClipName: Female-6_2 M
     soundSource: {fileID: 135940880}
     source: {fileID: 0}
   - name: ' Last one'

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1301886048}
-  m_IndirectSpecularColor: {r: 0.4516611, g: 0.52212566, b: 0.6072586, a: 1}
+  m_IndirectSpecularColor: {r: 0.45151228, g: 0.52205765, b: 0.607236, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8755,6 +8755,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
+  - name: Water
+    clip: {fileID: 8300000, guid: 87844326d709c4375a39023c2ef63faa, type: 3}
+    volume: 1
+    pitch: 1
+    clipLength: 0
+    loop: 1
+    npcType: 0
+    animationClipName: 
+    soundSource: {fileID: 1367970410}
+    source: {fileID: 0}
+  singleAudios:
   - name: TimeToGo
     clip: {fileID: 8300000, guid: ae549611337050a478d8a22376ec7aa7, type: 3}
     volume: 1
@@ -8765,15 +8776,55 @@ MonoBehaviour:
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}
-  - name: Water
-    clip: {fileID: 8300000, guid: 87844326d709c4375a39023c2ef63faa, type: 3}
+  - name: So Tired
+    clip: {fileID: 8300000, guid: 2445e21095ff440419ddd6fcfd26c6df, type: 3}
     volume: 1
     pitch: 1
     clipLength: 0
-    loop: 1
+    loop: 0
     npcType: 0
     animationClipName: 
-    soundSource: {fileID: 1367970410}
+    soundSource: {fileID: 1725141083}
+    source: {fileID: 0}
+  - name: kitchen filthy
+    clip: {fileID: 8300000, guid: 19801927845fab747ada0e2c023eb714, type: 3}
+    volume: 1
+    pitch: 1
+    clipLength: 0
+    loop: 0
+    npcType: 0
+    animationClipName: 
+    soundSource: {fileID: 1725141083}
+    source: {fileID: 0}
+  - name: fingers feel numb
+    clip: {fileID: 8300000, guid: 4b6468da1cedf2443b65f3d054e138e5, type: 3}
+    volume: 1
+    pitch: 1
+    clipLength: 0
+    loop: 0
+    npcType: 0
+    animationClipName: 
+    soundSource: {fileID: 1725141083}
+    source: {fileID: 0}
+  - name: Feel Down
+    clip: {fileID: 8300000, guid: 4ef0062ebe08661418af5b36a99291a4, type: 3}
+    volume: 1
+    pitch: 1
+    clipLength: 0
+    loop: 0
+    npcType: 0
+    animationClipName: 
+    soundSource: {fileID: 1725141083}
+    source: {fileID: 0}
+  - name: Shortness OF Breath Doctor
+    clip: {fileID: 8300000, guid: 63c92b8215536d249b914c3a40616a07, type: 3}
+    volume: 1
+    pitch: 1
+    clipLength: 0
+    loop: 0
+    npcType: 3
+    animationClipName: 
+    soundSource: {fileID: 822658883}
     source: {fileID: 0}
   dockDialogue:
   - name: Enough Fishing
@@ -8840,6 +8891,7 @@ MonoBehaviour:
   firstClinicDialogue: []
   secondClinicDialogue: []
   firstBasketballDialogue: []
+  secondBasketballDialogue: []
 --- !u!1 &454193624
 GameObject:
   m_ObjectHideFlags: 0
@@ -26627,6 +26679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a343d958efcd64283b4c7e7f83d974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterType: 0
 --- !u!136 &1725141088
 CapsuleCollider:
   m_ObjectHideFlags: 0

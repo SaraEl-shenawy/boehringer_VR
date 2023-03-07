@@ -29,7 +29,7 @@ public class DialoguePlayer : MonoBehaviour
     private void Start()
     {
     }
-    public IEnumerator PlayDialogueAudios(Sound[] _currentDialogue, UnityAction OnDialogueEnd)
+    public IEnumerator PlayDialogueAudios(Sound[] _currentDialogue, UnityAction OnDialogueEnd, int _dialogueIndex)
     {
         yield return new WaitForSeconds(1f);
 
@@ -48,7 +48,7 @@ public class DialoguePlayer : MonoBehaviour
                 doctorCharacter.GetComponent<Animator>().Play(_currentDialogue[i].animationClipName);
             }
 
-            AudioManager.instance.Play(_currentDialogue[i].name, _currentDialogue);
+            AudioManager.instance.Play(_currentDialogue[i].name, _dialogueIndex);
             while (_currentDialogue[i].soundSource.GetComponent<AudioSource>().isPlaying)
             {
                 yield return null;
