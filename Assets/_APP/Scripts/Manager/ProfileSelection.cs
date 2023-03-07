@@ -2,19 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CharacterType { male, female };
+
 public class ProfileSelection : MonoBehaviour
 {
-    public ProfileSelectionSO profileSelection;
+    #region OldSettings
+    //public ProfileSelectionSO profileSelection;
 
-    private void Start()
+    //private void Start()
+    //{
+    //    if (profileSelection.profileType == profileType.male)
+    //    {
+
+    //    }
+    //    else if (profileSelection.profileType == profileType.female)
+    //    {
+
+    //    }
+    //}
+    #endregion
+    #region Variables
+    public static ProfileSelection instance;
+    //realtime
+    public CharacterProfileSO characterProfile;
+    #endregion
+
+    private void Awake()
     {
-        if (profileSelection.profileType == profileType.male)
+        if (instance && instance != this)
         {
-
+            Destroy(gameObject);
         }
-        else if (profileSelection.profileType == profileType.female)
+        else if (!instance) 
         {
-
+            instance = this;
         }
     }
 }
