@@ -12,5 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6911afdd886a64da9ce953c9defe3f, type: 3}
   m_Name: FemaleProfile
   m_EditorClassIdentifier: 
+  characterType: 1
   Talk_2_1: {fileID: 8300000, guid: f52c5830acd2c6f4881c060da9021b25, type: 3}
   Talk_2_2: {fileID: 8300000, guid: bec54330a8a787c46a93b6313550db75, type: 3}
+  Talk_2_3: {fileID: 8300000, guid: 32f82ec8546fe05419a7da5f34e93300, type: 3}
+  Talk_2_4: {fileID: 8300000, guid: e88d7ad2b55010242a67c748f38f87dd, type: 3}
+  Talk_2_5: {fileID: 8300000, guid: e81bc39214b3eb94d84042665edebd2c, type: 3}
+  Talk_2_6: {fileID: 8300000, guid: 81f97e9acafd2594c97e9a47def229cc, type: 3}
+  Talk_2_7: {fileID: 8300000, guid: a85a92fe5425e364a8c89cb45bbe9c38, type: 3}
+  Talk_3_1: {fileID: 8300000, guid: a6647c998f1d7074398ed7dc3eebbb09, type: 3}
+  Talk_3_2: {fileID: 8300000, guid: becbe33c32708994b99e109fa0dd89b8, type: 3}
+  Talk_3_3: {fileID: 8300000, guid: eb26414792b0a164aaf7f55bdb34cd69, type: 3}
+  Talk_3_4: {fileID: 8300000, guid: 9aba363c10968514abcc06090dd0543e, type: 3}
+  Talk_4_1: {fileID: 8300000, guid: 63c92b8215536d249b914c3a40616a07, type: 3}
+  Talk_4_2: {fileID: 8300000, guid: 46e9359b40dd9f140ba70dc5943c6acc, type: 3}
+  Talk_4_3: {fileID: 8300000, guid: add6f4cf3b20d9a4c826e24be0edd2c8, type: 3}
+  Talk_4_4: {fileID: 8300000, guid: 62a661f5cfb7ae64383ee67db3a050ee, type: 3}
+  Talk_4_6: {fileID: 8300000, guid: 61641e00f57613e42b7bd3e833f927d3, type: 3}
+  Talk_4_7: {fileID: 8300000, guid: c9958f97c12c0134588e88ea8427ba39, type: 3}
+  Talk_5_1: {fileID: 8300000, guid: 35adbe24b2a0b8547b9c09e0353acd98, type: 3}
+  Talk_5_2: {fileID: 8300000, guid: 65b66f04519b7e4419ce85a8bac27742, type: 3}
+  Talk_5_3: {fileID: 8300000, guid: cc9d7998e9067724598c5cfa14071a60, type: 3}
+  Talk_5_4: {fileID: 8300000, guid: 8581f2a53435a2b449c12508c9aabea3, type: 3}
+  Talk_6_1: {fileID: 8300000, guid: ed8c3488a8a83b34c8c14006269db5ce, type: 3}
+  Talk_6_2: {fileID: 8300000, guid: c3d096f7eba8c3746a8d85093bde199c, type: 3}
+  Talk_6_3: {fileID: 8300000, guid: 3f216af8f1f585d46b5e1140082fa86d, type: 3}
+  Talk_6_4: {fileID: 8300000, guid: 0f79c616b9c43604495d3af3da6d9de6, type: 3}
+  Talk_6_5: {fileID: 8300000, guid: ed4a64331d719404fa3d2124750255a9, type: 3}
+  Talk_6_6: {fileID: 8300000, guid: 102cb37ae49c6124c9fc54a163b5c016, type: 3}
+  Talk_6_7: {fileID: 8300000, guid: effde94ffb59df9468af1848ed5c81ef, type: 3}
+  Talk_6_8: {fileID: 8300000, guid: a9e06c5b5e0140748953b88972f9573b, type: 3}
+  Talk_6_9: {fileID: 8300000, guid: f940a02639da19e4eaf2167a475db14a, type: 3}
+  Talk_6_10: {fileID: 8300000, guid: 0745d73c6e9191a4d9f906cdc19e89ed, type: 3}

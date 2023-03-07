@@ -37,5 +37,6 @@ public class ProfileSelection : MonoBehaviour
         {
             instance = this;
         }
+        DontDestroyOnLoad(this.gameObject);
     }
 }

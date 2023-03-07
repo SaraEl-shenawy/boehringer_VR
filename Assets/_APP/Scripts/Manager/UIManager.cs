@@ -13,8 +13,8 @@ public class UIManager : MonoBehaviour
     public GameObject firstYesButtonPanel;
     public GameObject secondYesButtonPanel;
 
-
-    public ProfileSelectionSO profileSelection;
+    public CharacterProfileSO maleProfileSelection;
+    public CharacterProfileSO femaleProfileSelection;
 
     public static UIManager instance;
     private void Awake()
@@ -43,11 +43,11 @@ public class UIManager : MonoBehaviour
 
     void MaleSelection()
     {
-        profileSelection.profileType = profileType.male;
+        ProfileSelection.instance.characterProfile = maleProfileSelection;
     }
     void FemaleSelection()
     {
-        profileSelection.profileType = profileType.female;
+        ProfileSelection.instance.characterProfile = femaleProfileSelection;
     }
     public void ActivateFirstYesPanel()
     {
@@ -60,13 +60,13 @@ public class UIManager : MonoBehaviour
 
     public void OnPressFirstYes()
     {
-        StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.firstClinicDialogue, ActivateSecondYesPanel));
+        StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.firstClinicDialogue, ActivateSecondYesPanel,4));
         firstYesButtonPanel.SetActive(false);
     }
     public void OnPressSecondYes()
     {
         secondYesButtonPanel.SetActive(false);
-        StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.secondClinicDialogue, null));
+        StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.secondClinicDialogue, null,5));
 
     }
 }

@@ -30,7 +30,7 @@ public class Character : MonoBehaviour
     {
         if (other.gameObject.tag == "WifeArea")
         {
-            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.outdoorHouseDialogue, null));
+            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.outdoorHouseDialogue, null,3));
             other.gameObject.SetActive(false);
             Destroy(other.gameObject);
         }
@@ -41,7 +41,7 @@ public class Character : MonoBehaviour
         }
         if (other.gameObject.tag == "Kitchen")
         {
-            AudioManager.instance.Play("Kitchen filthy", AudioManager.instance.sounds);
+            AudioManager.instance.Play("kitchen filthy", AudioManager.instance.sounds);
             other.gameObject.SetActive(false);
             Destroy(other.gameObject);
         }

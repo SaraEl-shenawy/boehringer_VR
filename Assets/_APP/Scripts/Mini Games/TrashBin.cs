@@ -15,7 +15,7 @@ public class TrashBin : MonoBehaviour
             Destroy(other.gameObject);
             if (counter >= 5)
             {
-                AudioManager.instance.Play("My Fingers", AudioManager.instance.sounds);
+                AudioManager.instance.Play("fingers feel numb", AudioManager.instance.sounds);
             }
         }
     }
