@@ -198,17 +198,10 @@ public class AudioManager : MonoBehaviour
     }
     public float Play(string _targetName, int DialogueId)
     {
-        //foreach (var item in _audioArray)
-        //{
-        //    if (item.name == _targetName)
-        //    {
-        //        item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-        //        item.soundSource.GetComponent<AudioSource>().Play();
-        //        clipLength = item.clipLength;
-        //    }
-        //}
         var audioToPlay = dialoguesDictionary[DialogueId].ToList().FirstOrDefault(a => a.name == _targetName);
+        audioToPlay.soundSource.GetComponent<AudioSource>().clip = audioToPlay.clip;
         audioToPlay.soundSource.GetComponent<AudioSource>().Play();
+        clipLength = audioToPlay.clipLength;
 
         return clipLength;
     }
