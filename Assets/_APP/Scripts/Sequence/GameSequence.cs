@@ -27,8 +27,8 @@ public class GameSequence : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().name == "Clinic")
         {
-            AudioManager.instance.Play("Shortness OF Breath Doctor", AudioManager.instance.sounds);
-            StartCoroutine(OnDoctorAudioEnd(AudioManager.instance.Play("Shortness of breath", AudioManager.instance.sounds)));
+            AudioManager.instance.Play("Shortness OF Breath Doctor", 1);
+            StartCoroutine(OnDoctorAudioEnd(AudioManager.instance.Play("Shortness of breath", 1)));
             //user start moving to kitchen
             return;
         }

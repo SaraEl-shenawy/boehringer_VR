@@ -136,66 +136,6 @@ public class AudioManager : MonoBehaviour
         //}
         #endregion
     }
-    public float Play(string _targetName, Sound[] _audioArray)
-    {
-        foreach (var item in _audioArray)
-        {
-            if (item.name == _targetName)
-            {
-                item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-                item.soundSource.GetComponent<AudioSource>().Play();
-                clipLength = item.clipLength;
-            }
-        }
-        #region OldSettings
-        //foreach (var item in sounds)
-        //{
-        //    if (item.name == _targetName)
-        //    {
-        //        item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-        //        item.soundSource.GetComponent<AudioSource>().Play();
-        //        clipLength = item.clipLength;
-        //    }
-        //}
-        //foreach (var item in dockDialogue)
-        //{
-        //    if (item.name == _targetName)
-        //    {
-        //        item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-        //        item.soundSource.GetComponent<AudioSource>().Play();
-        //        clipLength = item.clipLength;
-        //    }
-        //}
-        //foreach (var item in outdoorHouseDialogue)
-        //{
-        //    if (item.name == _targetName)
-        //    {
-        //        item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-        //        item.soundSource.GetComponent<AudioSource>().Play();
-        //        clipLength = item.clipLength;
-        //    }
-        //}
-        //foreach (var item in firstClinicDialogue)
-        //{
-        //    if (item.name == _targetName)
-        //    {
-        //        item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-        //        item.soundSource.GetComponent<AudioSource>().Play();
-        //        clipLength = item.clipLength;
-        //    }
-        //}
-        //foreach (var item in secondClinicDialogue)
-        //{
-        //    if (item.name == _targetName)
-        //    {
-        //        item.soundSource.GetComponent<AudioSource>().clip = item.clip;
-        //        item.soundSource.GetComponent<AudioSource>().Play();
-        //        clipLength = item.clipLength;
-        //    }
-        //}
-        #endregion
-        return clipLength;
-    }
     public float Play(string _targetName, int DialogueId)
     {
         var audioToPlay = dialoguesDictionary[DialogueId].ToList().FirstOrDefault(a => a.name == _targetName);
