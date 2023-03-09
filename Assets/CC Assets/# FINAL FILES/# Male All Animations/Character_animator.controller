@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-6_10 F
+  m_Name: NPC-6_10
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -33,7 +33,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-6_4 M
+  m_Name: NPC-6_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -59,7 +59,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-2_6 F
+  m_Name: NPC-2_6
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -85,7 +85,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-2_4 M
+  m_Name: NPC-2_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -111,7 +111,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-2_1 M
+  m_Name: NPC-2_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -137,7 +137,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-6_3 M
+  m_Name: NPC-6_3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -163,7 +163,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-6_1 M
+  m_Name: NPC-6_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -189,7 +189,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-4_6 M
+  m_Name: NPC-4_6
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -215,7 +215,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-6_6 M
+  m_Name: NPC-6_6
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -241,7 +241,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-4_2 M
+  m_Name: NPC-4_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -267,7 +267,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-6_9 M
+  m_Name: NPC-6_9
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -293,7 +293,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male-Walk
+  m_Name: NPC-Walk
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -319,7 +319,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-2_3 M
+  m_Name: NPC-2_3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -345,7 +345,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-2_2 F
+  m_Name: NPC-2_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -456,7 +456,7 @@ AnimatorStateMachine:
     m_Position: {x: 1110, y: 1690, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5118881567887664290}
-    m_Position: {x: 30, y: 210, z: 0}
+    m_Position: {x: 30, y: 190, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -496,7 +496,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-6_2 F
+  m_Name: NPC-6_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -522,7 +522,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-2_5 M
+  m_Name: Npc-2_5
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -548,7 +548,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-5_3 M
+  m_Name: NPC-5_3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -574,7 +574,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-3_3 M
+  m_Name: NPC-3_3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -600,7 +600,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-4_4 M
+  m_Name: NPC-4_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -626,7 +626,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-5_2 F
+  m_Name: NPC-5_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -652,7 +652,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-3_4 M- New
+  m_Name: NPC-3_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -678,7 +678,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-2_7 M
+  m_Name: NPC-2_7
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -704,7 +704,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-5_1 M
+  m_Name: NPC-5_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -730,7 +730,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-3_2 M
+  m_Name: NPC-3_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -756,7 +756,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 1970506999184_TempMotion
+  m_Name: Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -782,7 +782,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-5_4 M
+  m_Name: NPC-5_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -808,7 +808,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-3_1 M
+  m_Name: NPC-3_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -834,7 +834,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character_Imported_Male Talk-6_8 M
+  m_Name: NPC-6_8
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

@@ -35,3 +35,4 @@ public class PickingEquipments : MonoBehaviour
         DialoguePlayer.instance.userObject.GetComponent<ContinuousMoveProviderBase>().enabled = true;
     }
 }
+

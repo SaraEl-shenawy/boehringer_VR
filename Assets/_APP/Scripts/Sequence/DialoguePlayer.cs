@@ -11,7 +11,8 @@ public class DialoguePlayer : MonoBehaviour
     public GameObject maleCharacter;
     public GameObject doctorCharacter;
     public static DialoguePlayer instance;
-
+    public CharacterType characterType;
+    
     private void Awake()
     {
         if (instance == null)
@@ -23,11 +24,22 @@ public class DialoguePlayer : MonoBehaviour
             Destroy(this.gameObject);
             return;
         }
-        DontDestroyOnLoad(this.gameObject);
+
+        characterType = ProfileSelection.instance.characterProfile.characterType;
+
     }
 
     private void Start()
     {
+        if (characterType == CharacterType.female)
+        {
+            maleCharacter.gameObject.SetActive(true);
+        }
+        else if (characterType == CharacterType.male)
+        {
+            femaleCharacter.gameObject.SetActive(true);
+
+        }
     }
     public IEnumerator PlayDialogueAudios(Sound[] _currentDialogue, UnityAction OnDialogueEnd, int _dialogueIndex)
     {

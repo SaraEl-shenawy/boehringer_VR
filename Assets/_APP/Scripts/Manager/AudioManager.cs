@@ -32,6 +32,10 @@ public class AudioManager : MonoBehaviour
             Destroy(this.gameObject);
             return;
         }
+        SetDialogueAudio();
+        SetAudiosNPCType();
+        SetNPCAnimationName();
+
         dialoguesDictionary = new Dictionary<int, Sound[]>()
         {
             { 0, sounds},
@@ -52,7 +56,6 @@ public class AudioManager : MonoBehaviour
         SetDialogueAudioSettings(firstBasketballDialogue.ToList());
         SetDialogueAudioSettings(secondBasketballDialogue.ToList());
 
-        SetDialogueAudio();
         #region oldSetSettings
         //DontDestroyOnLoad(this.gameObject);
         //foreach (Sound s in sounds)
@@ -136,6 +139,7 @@ public class AudioManager : MonoBehaviour
         //}
         #endregion
     }
+ 
     public float Play(string _targetName, int DialogueId)
     {
         var audioToPlay = dialoguesDictionary[DialogueId].ToList().FirstOrDefault(a => a.name == _targetName);
@@ -159,6 +163,18 @@ public class AudioManager : MonoBehaviour
     {
         foreach (Sound s in sounds)
         {
+            if (s.npcType == NPCTypeEnum.female)
+            {
+                s.soundSource = DialoguePlayer.instance.femaleCharacter;
+            }
+            if (s.npcType == NPCTypeEnum.male)
+            {
+                s.soundSource = DialoguePlayer.instance.maleCharacter;
+            }
+            if (s.npcType == NPCTypeEnum.doctor)
+            {
+                s.soundSource = DialoguePlayer.instance.doctorCharacter;
+            }
             if (s.source == null)
             {
                 s.source = s.soundSource.AddComponent<AudioSource>();
@@ -169,19 +185,182 @@ public class AudioManager : MonoBehaviour
                 s.source.pitch = s.pitch;
                 s.source.loop = s.loop;
             }
+          
         }
     }
     private void SetDialogueAudio()
-    {
-        dockDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_2_1;
-        dockDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_2_2;
-        dockDialogue[2].clip = ProfileSelection.instance.characterProfile.Talk_2_3;
+    { //ch 2
+        if (dockDialogue.Length != 0)
+        {
+            dockDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_2_1.characterTalk;
+            dockDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_2_2.characterTalk;
+            dockDialogue[2].clip = ProfileSelection.instance.characterProfile.Talk_2_3.characterTalk;
+        }
         //time to go
-        singleAudios[0].clip = ProfileSelection.instance.characterProfile.Talk_2_4;
-        singleAudios[1].clip = ProfileSelection.instance.characterProfile.Talk_3_1;
-        singleAudios[2].clip = ProfileSelection.instance.characterProfile.Talk_3_2;
-        singleAudios[3].clip = ProfileSelection.instance.characterProfile.Talk_3_3;
-        singleAudios[4].clip = ProfileSelection.instance.characterProfile.Talk_3_4;
-        singleAudios[5].clip = ProfileSelection.instance.characterProfile.Talk_4_1;
+
+        if (outdoorHouseDialogue.Length != 0)
+        {
+            //Outdoor Beach Dialogue
+            outdoorHouseDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_2_5.characterTalk;
+            outdoorHouseDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_2_6.characterTalk;
+            outdoorHouseDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_2_7.characterTalk;
+        }
+        if (singleAudios.Length != 0)
+        {
+            //ch 3
+            singleAudios[0].clip = ProfileSelection.instance.characterProfile.Talk_2_4.characterTalk;
+            singleAudios[1].clip = ProfileSelection.instance.characterProfile.Talk_3_1.characterTalk;
+            singleAudios[2].clip = ProfileSelection.instance.characterProfile.Talk_3_2.characterTalk;
+            singleAudios[3].clip = ProfileSelection.instance.characterProfile.Talk_3_3.characterTalk;
+            singleAudios[4].clip = ProfileSelection.instance.characterProfile.Talk_3_4.characterTalk;
+            singleAudios[5].clip = ProfileSelection.instance.characterProfile.Talk_4_1.characterTalk;
+        }
+        if (firstClinicDialogue.Length != 0)
+        {
+            //First Clinic
+            firstClinicDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_4_2.characterTalk;
+            firstClinicDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_4_3.characterTalk;
+        }
+        if (secondClinicDialogue.Length != 0)
+        {
+            //Second Clinic
+            secondClinicDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_4_4.characterTalk;
+            secondClinicDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_4_6.characterTalk;
+            secondClinicDialogue[2].clip = ProfileSelection.instance.characterProfile.Talk_4_7.characterTalk;
+        }
+        if (firstBasketballDialogue.Length != 0)
+        {
+            //First Basketball
+            firstBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_1.characterTalk;
+            firstBasketballDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_6_2.characterTalk;
+            firstBasketballDialogue[2].clip = ProfileSelection.instance.characterProfile.Talk_6_3.characterTalk;
+        }
+        if (secondBasketballDialogue.Length != 0)
+        {
+            //Second Basketball
+            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_4.characterTalk;
+            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_5.characterTalk;
+            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_6.characterTalk;
+            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_7.characterTalk;
+            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_8.characterTalk;
+            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_9.characterTalk;
+            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_10.characterTalk;
+        }
     }
+    private void SetAudiosNPCType()
+    { //ch 2
+        if (dockDialogue.Length != 0)
+        {
+            dockDialogue[0].npcType = ProfileSelection.instance.characterProfile.Talk_2_1.npcType;
+            dockDialogue[1].npcType = ProfileSelection.instance.characterProfile.Talk_2_2.npcType;
+            dockDialogue[2].npcType = ProfileSelection.instance.characterProfile.Talk_2_3.npcType;
+        }
+        if (outdoorHouseDialogue.Length != 0)
+        {
+            //Outdoor Beach Dialogue
+            outdoorHouseDialogue[0].npcType = ProfileSelection.instance.characterProfile.Talk_2_5.npcType;
+            outdoorHouseDialogue[1].npcType = ProfileSelection.instance.characterProfile.Talk_2_6.npcType;
+            outdoorHouseDialogue[1].npcType = ProfileSelection.instance.characterProfile.Talk_2_7.npcType;
+        }
+        if (singleAudios.Length != 0)
+        {
+            //time to go    
+            singleAudios[0].npcType = ProfileSelection.instance.characterProfile.Talk_2_4.npcType;
+            singleAudios[1].npcType = ProfileSelection.instance.characterProfile.Talk_3_1.npcType;
+            singleAudios[2].npcType = ProfileSelection.instance.characterProfile.Talk_3_2.npcType;
+            singleAudios[3].npcType = ProfileSelection.instance.characterProfile.Talk_3_3.npcType;
+            singleAudios[4].npcType = ProfileSelection.instance.characterProfile.Talk_3_4.npcType;
+            singleAudios[5].npcType = ProfileSelection.instance.characterProfile.Talk_4_1.npcType;
+        }
+        if (firstClinicDialogue.Length != 0)
+        {
+            //First Clinic
+            firstClinicDialogue[0].npcType = ProfileSelection.instance.characterProfile.Talk_4_2.npcType;
+            firstClinicDialogue[1].npcType = ProfileSelection.instance.characterProfile.Talk_4_3.npcType;
+        }
+        if (secondClinicDialogue.Length != 0)
+        {
+            //Second Clinic
+            secondClinicDialogue[0].npcType = ProfileSelection.instance.characterProfile.Talk_4_4.npcType;
+            secondClinicDialogue[1].npcType = ProfileSelection.instance.characterProfile.Talk_4_6.npcType;
+            secondClinicDialogue[2].npcType = ProfileSelection.instance.characterProfile.Talk_4_7.npcType;
+        }
+        if (firstBasketballDialogue.Length != 0)
+        {
+            //First Basketball
+            firstBasketballDialogue[0].npcType = ProfileSelection.instance.characterProfile.Talk_6_1.npcType;
+            firstBasketballDialogue[1].npcType = ProfileSelection.instance.characterProfile.Talk_6_2.npcType;
+            firstBasketballDialogue[2].npcType = ProfileSelection.instance.characterProfile.Talk_6_3.npcType;
+        }
+        if (secondBasketballDialogue.Length != 0)
+        {
+            //Second Basketball
+            secondBasketballDialogue[0].npcType = ProfileSelection.instance.characterProfile.Talk_6_4.npcType;
+            secondBasketballDialogue[1].npcType = ProfileSelection.instance.characterProfile.Talk_6_5.npcType;
+            secondBasketballDialogue[2].npcType = ProfileSelection.instance.characterProfile.Talk_6_6.npcType;
+            secondBasketballDialogue[3].npcType = ProfileSelection.instance.characterProfile.Talk_6_7.npcType;
+            secondBasketballDialogue[4].npcType = ProfileSelection.instance.characterProfile.Talk_6_8.npcType;
+            secondBasketballDialogue[5].npcType = ProfileSelection.instance.characterProfile.Talk_6_9.npcType;
+            secondBasketballDialogue[6].npcType = ProfileSelection.instance.characterProfile.Talk_6_10.npcType;
+        }
+    }
+
+    private void SetNPCAnimationName()
+    { //ch 2
+        if (dockDialogue.Length != 0)
+        {
+            dockDialogue[0].animationClipName = ProfileSelection.instance.characterProfile.Talk_2_1.animationClipName;
+            dockDialogue[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_2_2.animationClipName;
+            dockDialogue[2].animationClipName = ProfileSelection.instance.characterProfile.Talk_2_3.animationClipName;
+        }
+        if (outdoorHouseDialogue.Length != 0)
+        {
+            //Outdoor Beach Dialogue
+            outdoorHouseDialogue[0].animationClipName = ProfileSelection.instance.characterProfile.Talk_2_5.animationClipName;
+            outdoorHouseDialogue[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_2_6.animationClipName;
+            outdoorHouseDialogue[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_2_7.animationClipName;
+        }
+        if (singleAudios.Length != 0)
+        {
+            //time to go    
+            singleAudios[0].animationClipName = ProfileSelection.instance.characterProfile.Talk_2_4.animationClipName;
+            singleAudios[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_3_1.animationClipName;
+            singleAudios[2].animationClipName = ProfileSelection.instance.characterProfile.Talk_3_2.animationClipName;
+            singleAudios[3].animationClipName = ProfileSelection.instance.characterProfile.Talk_3_3.animationClipName;
+            singleAudios[4].animationClipName = ProfileSelection.instance.characterProfile.Talk_3_4.animationClipName;
+            singleAudios[5].animationClipName = ProfileSelection.instance.characterProfile.Talk_4_1.animationClipName;
+        }
+        if (firstClinicDialogue.Length != 0)
+        {
+            //First Clinic
+            firstClinicDialogue[0].animationClipName = ProfileSelection.instance.characterProfile.Talk_4_2.animationClipName;
+            firstClinicDialogue[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_4_3.animationClipName;
+        }
+        if (secondClinicDialogue.Length != 0)
+        {
+            //Second Clinic
+            secondClinicDialogue[0].animationClipName = ProfileSelection.instance.characterProfile.Talk_4_4.animationClipName;
+            secondClinicDialogue[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_4_6.animationClipName;
+            secondClinicDialogue[2].animationClipName = ProfileSelection.instance.characterProfile.Talk_4_7.animationClipName;
+        }
+        if (firstBasketballDialogue.Length != 0)
+        {
+            //First Basketball
+            firstBasketballDialogue[0].animationClipName = ProfileSelection.instance.characterProfile.Talk_6_1.animationClipName;
+            firstBasketballDialogue[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_6_2.animationClipName;
+            firstBasketballDialogue[2].animationClipName = ProfileSelection.instance.characterProfile.Talk_6_3.animationClipName;
+        }
+        if (secondBasketballDialogue.Length != 0)
+        {
+            //Second Basketball
+            secondBasketballDialogue[0].animationClipName = ProfileSelection.instance.characterProfile.Talk_6_4.animationClipName;
+            secondBasketballDialogue[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_6_5.animationClipName;
+            secondBasketballDialogue[2].animationClipName = ProfileSelection.instance.characterProfile.Talk_6_6.animationClipName;
+            secondBasketballDialogue[3].animationClipName = ProfileSelection.instance.characterProfile.Talk_6_7.animationClipName;
+            secondBasketballDialogue[4].animationClipName = ProfileSelection.instance.characterProfile.Talk_6_8.animationClipName;
+            secondBasketballDialogue[5].animationClipName = ProfileSelection.instance.characterProfile.Talk_6_9.animationClipName;
+            secondBasketballDialogue[6].animationClipName = ProfileSelection.instance.characterProfile.Talk_6_10.animationClipName;
+        }
+    }
+
 }

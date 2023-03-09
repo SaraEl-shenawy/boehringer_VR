@@ -8,10 +8,10 @@ public class GameSequence : MonoBehaviour
     bool checkUserAudioSource = false;
     public GameObject characterSource;
     public GameObject kitchenArea;
-
-
+ 
     private void Start()
     {
+
         if (SceneManager.GetActiveScene().name == "Chapter 2")
         {
             AudioManager.instance.Play("Water", 0);
@@ -41,6 +41,8 @@ public class GameSequence : MonoBehaviour
     }
     private void Update()
     {
+        
+
         if (checkUserAudioSource)
         {
             if (!characterSource.GetComponent<AudioSource>().isPlaying)

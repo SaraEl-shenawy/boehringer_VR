@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-Walk
+  m_Name: NPC-Walk
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -213,7 +213,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-6_1 F
+  m_Name: NPC-6_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -240,7 +240,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-4_4
+  m_Name: NPC-4_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -333,7 +333,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-2_2 M
+  m_Name: NPC-2_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -808,7 +808,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-6_4 F
+  m_Name: NPC-6_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -942,17 +942,17 @@ AnimatorStateMachine:
     m_Position: {x: 710, y: 580, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -9192504380492247083}
-    m_Position: {x: 300, y: 700, z: 0}
+    m_Position: {x: 280, y: 680, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3905833629279098324}
-    m_Position: {x: 300, y: 870, z: 0}
+    m_Position: {x: 280, y: 870, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: -60, y: -220, z: 0}
-  m_EntryPosition: {x: 320, y: 770, z: 0}
+  m_EntryPosition: {x: 300, y: 770, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -3905833629279098324}
@@ -985,7 +985,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-5_1 F
+  m_Name: NPC-5_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1070,7 +1070,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-6_9 F
+  m_Name: NPC-6_9
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1849,7 +1849,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-6_2 M
+  m_Name: NPC-6_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1994,7 +1994,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-2_4 F
+  m_Name: NPC-2_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2043,7 +2043,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-3_4 F
+  m_Name: NPC-3_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2114,7 +2114,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-6_3 F
+  m_Name: NPC-6_3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -2747,7 +2747,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-2_6 M
+  m_Name: NPC-2_6
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -3200,7 +3200,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-6_10  M
+  m_Name: NPC-6_10
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -3285,7 +3285,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-6_6 F
+  m_Name: NPC-6_6
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -3404,7 +3404,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-2_5 F
+  m_Name: NPC-2_5
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -3453,7 +3453,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-3_2 F
+  m_Name: NPC-3_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -3480,7 +3480,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-2_1 F
+  m_Name: NPC-2_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -3555,7 +3555,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-3_3 F
+  m_Name: NPC-3_3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -3924,7 +3924,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-2_7F
+  m_Name: NPC-2_7 0
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -4109,7 +4109,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-2_3 F
+  m_Name: NPC-2_3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -4236,7 +4236,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-5_4 F
+  m_Name: NPC-5_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -4573,7 +4573,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-2_7 F
+  m_Name: NPC-2_7
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -4736,7 +4736,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-4_6
+  m_Name: NPC-4_6
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -4995,7 +4995,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-6_8 F
+  m_Name: NPC-6_8
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -5022,7 +5022,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-3_1 F
+  m_Name: NPC-3_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -5237,7 +5237,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-5_3 F
+  m_Name: NPC-5_3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -5308,7 +5308,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-4_2 F
+  m_Name: NPC-4_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -5427,7 +5427,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Female-5_2 M
+  m_Name: NPC-5_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:

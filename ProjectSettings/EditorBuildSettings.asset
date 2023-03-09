@@ -6,25 +6,25 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start Scene.unity
+    path: Assets/_APP/Scenes/Start Scene.unity
     guid: 18f1f5e0ac00ec348bbb116b48183794
   - enabled: 1
-    path: Assets/Scenes/Chapter 2.unity
+    path: Assets/_APP/Scenes/Chapter 2.unity
     guid: 01b482d94d2fe6e47887d04cf96f10eb
   - enabled: 1
-    path: Assets/Scenes/Chapter 3.unity
+    path: Assets/_APP/Scenes/Chapter 3.unity
     guid: 94565526a988fd941a2fb0387749a093
   - enabled: 0
-    path: Assets/Scenes/Bowling Scene.unity
+    path: Assets/_APP/Scenes/Bowling Scene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
     path: Assets/HapticsScene.unity
     guid: fd5a860a6835d754caa75b78c9ec3ffc
   - enabled: 0
-    path: Assets/Scenes/Clinic.unity
+    path: Assets/_APP/Scenes/Clinic.unity
     guid: 595990f3d011fb04ba4c8e64e71c40d2
   - enabled: 1
-    path: Assets/Scenes/Basketball Scene.unity
+    path: Assets/_APP/Scenes/Basketball Scene.unity
     guid: 228e92633257f32428468ea1adb41342
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: efdd0c2a4cf1f2343ac0b3c7d690b4c8, type: 2}
