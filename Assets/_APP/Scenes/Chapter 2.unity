@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1301886048}
-  m_IndirectSpecularColor: {r: 0.4514175, g: 0.5220266, b: 0.6071828, a: 1}
+  m_IndirectSpecularColor: {r: 0.45130354, g: 0.5219618, b: 0.607171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7774,7 +7774,6 @@ MonoBehaviour:
   femaleCharacter: {fileID: 919132148893618808}
   maleCharacter: {fileID: 919132148321186549}
   doctorCharacter: {fileID: 822658883}
-  characterType: 0
 --- !u!1 &396043153
 GameObject:
   m_ObjectHideFlags: 0
@@ -8651,16 +8650,6 @@ MonoBehaviour:
     animationClipName: 
     soundSource: {fileID: 1725141083}
     source: {fileID: 0}
-  - name: Shortness OF Breath Doctor
-    clip: {fileID: 8300000, guid: 63c92b8215536d249b914c3a40616a07, type: 3}
-    volume: 1
-    pitch: 1
-    clipLength: 0
-    loop: 0
-    npcType: 3
-    animationClipName: 
-    soundSource: {fileID: 822658883}
-    source: {fileID: 0}
   dockDialogue:
   - name: Enough Fishing
     clip: {fileID: 8300000, guid: 5f4ac9363a3b21f40987ad7025d47fa1, type: 3}
@@ -8725,6 +8714,7 @@ MonoBehaviour:
     source: {fileID: 0}
   firstClinicDialogue: []
   secondClinicDialogue: []
+  thirdClinicDialogue: []
   firstBasketballDialogue: []
   secondBasketballDialogue: []
 --- !u!1 &454193624

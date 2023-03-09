@@ -37,8 +37,11 @@ public class UIManager : MonoBehaviour
             firstYesButton.onClick.AddListener(OnPressFirstYes);
             secondYesButton.onClick.AddListener(OnPressSecondYes);
         }
-        maleSelection.onClick.AddListener(MaleSelection);
-        femaleSelection.onClick.AddListener(FemaleSelection);
+        if (SceneManager.GetActiveScene().name == "Start Scene")
+        {
+            maleSelection.onClick.AddListener(MaleSelection);
+            femaleSelection.onClick.AddListener(FemaleSelection);
+        }
     }
 
     void MaleSelection()
@@ -60,13 +63,13 @@ public class UIManager : MonoBehaviour
 
     public void OnPressFirstYes()
     {
-        StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.firstClinicDialogue, ActivateSecondYesPanel,4));
+        StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.secondClinicDialogue, ActivateSecondYesPanel, 5));
         firstYesButtonPanel.SetActive(false);
     }
     public void OnPressSecondYes()
     {
         secondYesButtonPanel.SetActive(false);
-        StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.secondClinicDialogue, null,5));
+        StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.thirdClinicDialogue, null, 6));
 
     }
 }

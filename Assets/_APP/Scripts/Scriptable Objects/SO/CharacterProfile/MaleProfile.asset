@@ -57,10 +57,14 @@ MonoBehaviour:
     characterTalk: {fileID: 8300000, guid: 4ef0062ebe08661418af5b36a99291a4, type: 3}
     npcType: 0
     animationClipName: 
+  Talk_4_0:
+    characterTalk: {fileID: 8300000, guid: 57b88b24fdd7cfc4cab1b35303250861, type: 3}
+    npcType: 3
+    animationClipName: Doctor Seated Idle
   Talk_4_1:
     characterTalk: {fileID: 8300000, guid: 63c92b8215536d249b914c3a40616a07, type: 3}
-    npcType: 0
-    animationClipName: 
+    npcType: 3
+    animationClipName: Doctor Talk-4_1-Seated
   Talk_4_2:
     characterTalk: {fileID: 8300000, guid: 65e65fad8c7d8f341bdf8b69310b86e8, type: 3}
     npcType: 0
@@ -68,7 +72,7 @@ MonoBehaviour:
   Talk_4_3:
     characterTalk: {fileID: 8300000, guid: add6f4cf3b20d9a4c826e24be0edd2c8, type: 3}
     npcType: 3
-    animationClipName: 
+    animationClipName: Doctor Talk-4_3-Seated
   Talk_4_4:
     characterTalk: {fileID: 8300000, guid: 62a661f5cfb7ae64383ee67db3a050ee, type: 3}
     npcType: 0
@@ -80,7 +84,7 @@ MonoBehaviour:
   Talk_4_7:
     characterTalk: {fileID: 8300000, guid: c9958f97c12c0134588e88ea8427ba39, type: 3}
     npcType: 3
-    animationClipName: 
+    animationClipName: Doctor Talk-4_7-Seated
   Talk_5_1:
     characterTalk: {fileID: 8300000, guid: bda4323eb72134c49ba5977c5fbfe76c, type: 3}
     npcType: 0

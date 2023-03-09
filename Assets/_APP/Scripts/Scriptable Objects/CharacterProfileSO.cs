@@ -27,11 +27,12 @@ public class CharacterProfileSO : ScriptableObject
     [Header("I Feel Down Audio")]
     public ProfileSelectedData Talk_3_4;
     [Header("Shortness OF Breath Doctor Audio")]
+    public ProfileSelectedData Talk_4_0;
     public ProfileSelectedData Talk_4_1;
-    [Header("First Clinic Dialogue")]
+    [Header("Second Clinic Dialogue")]
     public ProfileSelectedData Talk_4_2;
     public ProfileSelectedData Talk_4_3;
-    [Header("Second Clinic Dialogue")]
+    [Header("Third Clinic Dialogue")]
     public ProfileSelectedData Talk_4_4;
     public ProfileSelectedData Talk_4_6;
     public ProfileSelectedData Talk_4_7;

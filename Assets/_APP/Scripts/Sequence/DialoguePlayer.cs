@@ -11,7 +11,7 @@ public class DialoguePlayer : MonoBehaviour
     public GameObject maleCharacter;
     public GameObject doctorCharacter;
     public static DialoguePlayer instance;
-    public CharacterType characterType;
+    private CharacterType characterType;
     
     private void Awake()
     {
@@ -80,9 +80,9 @@ public class DialoguePlayer : MonoBehaviour
         userObject.GetComponent<Collider>().enabled = true;
         userObject.GetComponent<Rigidbody>().useGravity = true;
     }
-    public void OnClinicDialogueEnded()
+    public void OnFirstClinicDialogueEnded()
     {
-
+        UIManager.instance.ActivateFirstYesPanel();
     }
 }
 
