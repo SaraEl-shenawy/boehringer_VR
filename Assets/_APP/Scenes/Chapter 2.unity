@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1301886048}
-  m_IndirectSpecularColor: {r: 0.45174932, g: 0.5221641, b: 0.60727805, a: 1}
+  m_IndirectSpecularColor: {r: 0.4514175, g: 0.5220266, b: 0.6071828, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -48895,6 +48895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Male_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1297139848985953277, guid: c6cf1790b8a2e9c4fad026463581eaa0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1822706043965118791, guid: c6cf1790b8a2e9c4fad026463581eaa0, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -93221,6 +93225,10 @@ PrefabInstance:
     - target: {fileID: 8407201492634939461, guid: 736a79809e64de244a7e1c19349044b3, type: 3}
       propertyPath: m_Name
       value: Female_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407201492634939461, guid: 736a79809e64de244a7e1c19349044b3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9216530438511913727, guid: 736a79809e64de244a7e1c19349044b3, type: 3}
       propertyPath: m_RootOrder

@@ -33,11 +33,11 @@ public class DialoguePlayer : MonoBehaviour
     {
         if (characterType == CharacterType.female)
         {
-            maleCharacter.gameObject.SetActive(true);
+            femaleCharacter.gameObject.SetActive(false);
         }
         else if (characterType == CharacterType.male)
         {
-            femaleCharacter.gameObject.SetActive(true);
+            maleCharacter.gameObject.SetActive(false);
 
         }
     }

@@ -167,11 +167,11 @@ public class AudioManager : MonoBehaviour
             {
                 s.soundSource = DialoguePlayer.instance.femaleCharacter;
             }
-            if (s.npcType == NPCTypeEnum.male)
+            else if (s.npcType == NPCTypeEnum.male)
             {
                 s.soundSource = DialoguePlayer.instance.maleCharacter;
             }
-            if (s.npcType == NPCTypeEnum.doctor)
+            else if (s.npcType == NPCTypeEnum.doctor)
             {
                 s.soundSource = DialoguePlayer.instance.doctorCharacter;
             }
