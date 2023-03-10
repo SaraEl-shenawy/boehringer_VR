@@ -206,7 +206,7 @@ public class AudioManager : MonoBehaviour
             //Outdoor Beach Dialogue
             outdoorHouseDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_2_5.characterTalk;
             outdoorHouseDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_2_6.characterTalk;
-            outdoorHouseDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_2_7.characterTalk;
+            outdoorHouseDialogue[2].clip = ProfileSelection.instance.characterProfile.Talk_2_7.characterTalk;
         }
         if (singleAudios.Length != 0)
         {
@@ -247,12 +247,12 @@ public class AudioManager : MonoBehaviour
         {
             //Second Basketball
             secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_4.characterTalk;
-            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_5.characterTalk;
-            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_6.characterTalk;
-            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_7.characterTalk;
-            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_8.characterTalk;
-            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_9.characterTalk;
-            secondBasketballDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_6_10.characterTalk;
+            secondBasketballDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_6_5.characterTalk;
+            secondBasketballDialogue[2].clip = ProfileSelection.instance.characterProfile.Talk_6_6.characterTalk;
+            secondBasketballDialogue[3].clip = ProfileSelection.instance.characterProfile.Talk_6_7.characterTalk;
+            secondBasketballDialogue[4].clip = ProfileSelection.instance.characterProfile.Talk_6_8.characterTalk;
+            secondBasketballDialogue[5].clip = ProfileSelection.instance.characterProfile.Talk_6_9.characterTalk;
+            secondBasketballDialogue[6].clip = ProfileSelection.instance.characterProfile.Talk_6_10.characterTalk;
         }
     }
     private void SetAudiosNPCType()
@@ -268,7 +268,7 @@ public class AudioManager : MonoBehaviour
             //Outdoor Beach Dialogue
             outdoorHouseDialogue[0].npcType = ProfileSelection.instance.characterProfile.Talk_2_5.npcType;
             outdoorHouseDialogue[1].npcType = ProfileSelection.instance.characterProfile.Talk_2_6.npcType;
-            outdoorHouseDialogue[1].npcType = ProfileSelection.instance.characterProfile.Talk_2_7.npcType;
+            outdoorHouseDialogue[2].npcType = ProfileSelection.instance.characterProfile.Talk_2_7.npcType;
         }
         if (singleAudios.Length != 0)
         {
@@ -331,7 +331,7 @@ public class AudioManager : MonoBehaviour
             //Outdoor Beach Dialogue
             outdoorHouseDialogue[0].animationClipName = ProfileSelection.instance.characterProfile.Talk_2_5.animationClipName;
             outdoorHouseDialogue[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_2_6.animationClipName;
-            outdoorHouseDialogue[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_2_7.animationClipName;
+            outdoorHouseDialogue[2].animationClipName = ProfileSelection.instance.characterProfile.Talk_2_7.animationClipName;
         }
         if (singleAudios.Length != 0)
         {

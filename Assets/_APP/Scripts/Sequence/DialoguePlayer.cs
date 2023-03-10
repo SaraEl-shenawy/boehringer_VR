@@ -10,6 +10,7 @@ public class DialoguePlayer : MonoBehaviour
     public GameObject femaleCharacter;
     public GameObject maleCharacter;
     public GameObject doctorCharacter;
+   
     public static DialoguePlayer instance;
     private CharacterType characterType;
     
@@ -34,11 +35,12 @@ public class DialoguePlayer : MonoBehaviour
         if (characterType == CharacterType.female)
         {
             femaleCharacter.gameObject.SetActive(false);
+           
         }
         else if (characterType == CharacterType.male)
         {
             maleCharacter.gameObject.SetActive(false);
-
+           
         }
     }
     public IEnumerator PlayDialogueAudios(Sound[] _currentDialogue, UnityAction OnDialogueEnd, int _dialogueIndex)

@@ -8,12 +8,30 @@ public class GameSequence : MonoBehaviour
     bool checkUserAudioSource = false;
     public GameObject characterSource;
     public GameObject kitchenArea;
- 
+    public GameObject[] maleObjects;
+    public GameObject[] femaleObjects;
+    private CharacterType characterType;
+
     private void Start()
     {
+        characterType = ProfileSelection.instance.characterProfile.characterType;
 
         if (SceneManager.GetActiveScene().name == "Chapter 2")
         {
+            if (characterType == CharacterType.female)
+            {
+                for (int i = 0; i < maleObjects.Length; i++)
+                {
+                    maleObjects[i].SetActive(false);
+                }
+            }
+            else if (characterType == CharacterType.male)
+            {
+                for (int i = 0; i < femaleObjects.Length; i++)
+                {
+                    femaleObjects[i].SetActive(false);
+                }
+            }
             AudioManager.instance.Play("Water", 0);
             StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.dockDialogue, DialoguePlayer.instance.OnDockDialogueEnded,2));
             return;
@@ -40,7 +58,6 @@ public class GameSequence : MonoBehaviour
     private void Update()
     {
         
-
         if (checkUserAudioSource)
         {
             if (!characterSource.GetComponent<AudioSource>().isPlaying)
