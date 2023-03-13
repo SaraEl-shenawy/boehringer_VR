@@ -28,12 +28,6 @@ public class Character : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "WifeArea")
-        {
-            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.outdoorHouseDialogue, null,3));
-            other.gameObject.SetActive(false);
-            Destroy(other.gameObject);
-        }
         if (other.gameObject.tag == "House")
         {
             this.gameObject.GetComponentInChildren<Animator>().enabled = true;

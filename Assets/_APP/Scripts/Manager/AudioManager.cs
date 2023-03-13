@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     public Sound[] firstClinicDialogue;
     public Sound[] secondClinicDialogue;
     public Sound[] thirdClinicDialogue;
+    public Sound[] kitchenDialogue;
     public Sound[] firstBasketballDialogue;
     public Sound[] secondBasketballDialogue;
 
@@ -46,8 +47,9 @@ public class AudioManager : MonoBehaviour
             { 4, firstClinicDialogue},
             { 5, secondClinicDialogue},
             { 6, thirdClinicDialogue},
-            { 7, firstBasketballDialogue},
-            { 8, secondBasketballDialogue}
+            { 7, kitchenDialogue},
+            { 8, firstBasketballDialogue},
+            { 9, secondBasketballDialogue}
         };
         SetDialogueAudioSettings(sounds.ToList());
         SetDialogueAudioSettings(singleAudios.ToList());
@@ -56,6 +58,7 @@ public class AudioManager : MonoBehaviour
         SetDialogueAudioSettings(firstClinicDialogue.ToList());
         SetDialogueAudioSettings(secondClinicDialogue.ToList());
         SetDialogueAudioSettings(thirdClinicDialogue.ToList());
+        SetDialogueAudioSettings(kitchenDialogue.ToList());
         SetDialogueAudioSettings(firstBasketballDialogue.ToList());
         SetDialogueAudioSettings(secondBasketballDialogue.ToList());
 
@@ -142,7 +145,7 @@ public class AudioManager : MonoBehaviour
         //}
         #endregion
     }
- 
+
     public float Play(string _targetName, int DialogueId)
     {
         var audioToPlay = dialoguesDictionary[DialogueId].ToList().FirstOrDefault(a => a.name == _targetName);
@@ -188,7 +191,7 @@ public class AudioManager : MonoBehaviour
                 s.source.pitch = s.pitch;
                 s.source.loop = s.loop;
             }
-          
+
         }
     }
     private void SetDialogueAudio()
@@ -235,6 +238,13 @@ public class AudioManager : MonoBehaviour
             thirdClinicDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_4_4.characterTalk;
             thirdClinicDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_4_6.characterTalk;
             thirdClinicDialogue[2].clip = ProfileSelection.instance.characterProfile.Talk_4_7.characterTalk;
+        }
+        if (kitchenDialogue.Length != 0)
+        {
+            kitchenDialogue[0].clip = ProfileSelection.instance.characterProfile.Talk_5_1.characterTalk;
+            kitchenDialogue[1].clip = ProfileSelection.instance.characterProfile.Talk_5_2.characterTalk;
+            kitchenDialogue[2].clip = ProfileSelection.instance.characterProfile.Talk_5_3.characterTalk;
+            kitchenDialogue[3].clip = ProfileSelection.instance.characterProfile.Talk_5_4.characterTalk;
         }
         if (firstBasketballDialogue.Length != 0)
         {
@@ -298,6 +308,13 @@ public class AudioManager : MonoBehaviour
             thirdClinicDialogue[1].npcType = ProfileSelection.instance.characterProfile.Talk_4_6.npcType;
             thirdClinicDialogue[2].npcType = ProfileSelection.instance.characterProfile.Talk_4_7.npcType;
         }
+        if (kitchenDialogue.Length != 0)
+        {
+            kitchenDialogue[0].npcType = ProfileSelection.instance.characterProfile.Talk_5_1.npcType;
+            kitchenDialogue[1].npcType = ProfileSelection.instance.characterProfile.Talk_5_2.npcType;
+            kitchenDialogue[2].npcType = ProfileSelection.instance.characterProfile.Talk_5_3.npcType;
+            kitchenDialogue[3].npcType = ProfileSelection.instance.characterProfile.Talk_5_4.npcType;
+        }
         if (firstBasketballDialogue.Length != 0)
         {
             //First Basketball
@@ -360,6 +377,13 @@ public class AudioManager : MonoBehaviour
             thirdClinicDialogue[0].animationClipName = ProfileSelection.instance.characterProfile.Talk_4_4.animationClipName;
             thirdClinicDialogue[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_4_6.animationClipName;
             thirdClinicDialogue[2].animationClipName = ProfileSelection.instance.characterProfile.Talk_4_7.animationClipName;
+        }
+        if (kitchenDialogue.Length != 0)
+        {
+            kitchenDialogue[0].animationClipName = ProfileSelection.instance.characterProfile.Talk_5_1.animationClipName;
+            kitchenDialogue[1].animationClipName = ProfileSelection.instance.characterProfile.Talk_5_2.animationClipName;
+            kitchenDialogue[2].animationClipName = ProfileSelection.instance.characterProfile.Talk_5_3.animationClipName;
+            kitchenDialogue[3].animationClipName = ProfileSelection.instance.characterProfile.Talk_5_4.animationClipName;
         }
         if (firstBasketballDialogue.Length != 0)
         {

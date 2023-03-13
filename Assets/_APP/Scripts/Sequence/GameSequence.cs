@@ -48,9 +48,14 @@ public class GameSequence : MonoBehaviour
             StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.firstClinicDialogue, DialoguePlayer.instance.OnFirstClinicDialogueEnded, 4));
             return;
         }
+        if (SceneManager.GetActiveScene().name == "Chapter 5")
+        {
+            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.kitchenDialogue, null, 7));
+            return;
+        }
         if (SceneManager.GetActiveScene().name == "Basketball Scene")
         {
-            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.secondBasketballDialogue, null,7));
+            StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.firstBasketballDialogue, null,8));
             //user start moving to kitchen
             return;
         }
@@ -72,6 +77,10 @@ public class GameSequence : MonoBehaviour
     {
         yield return new WaitForSeconds(clipTime);
         UIManager.instance.ActivateFirstYesPanel();
+    }
+    public void OnReachNpcPoint()
+    {
+        StartCoroutine(DialoguePlayer.instance.PlayDialogueAudios(AudioManager.instance.outdoorHouseDialogue, null, 3));
     }
 }
 

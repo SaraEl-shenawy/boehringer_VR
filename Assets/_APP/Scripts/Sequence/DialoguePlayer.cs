@@ -77,7 +77,6 @@ public class DialoguePlayer : MonoBehaviour
     public void OnDockDialogueEnded()
     {
         // pickup action
-        box.GetComponent<Collider>().enabled = true;
         userObject.AddComponent<Rigidbody>();
         userObject.GetComponent<Collider>().enabled = true;
         userObject.GetComponent<Rigidbody>().useGravity = true;
@@ -86,6 +85,7 @@ public class DialoguePlayer : MonoBehaviour
     {
         UIManager.instance.ActivateFirstYesPanel();
     }
+
 }
 
 
